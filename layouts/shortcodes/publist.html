@@ -1,0 +1,5 @@
+<ul>
+{{ range where .Site.RegularPages ".Params.authors" "intersect" (slice "T. Mitchell")}}
+<li>{{ partial "doi.html" . }}</li>
+{{ end }}
+</ul>

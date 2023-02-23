@@ -1,0 +1,13 @@
+<a
+href="{{ with $.Params.externalUrl }}
+  {{ . }}
+{{ else }}
+  {{ $.RelPermalink }}
+{{ end }}"
+aria-label="{{ $.Title | emojify }}"
+>
+<i>{{ .Title }}</i>
+{{ range .Params.Authors }}
+{{ . }}
+{{ end }}
+</a>
