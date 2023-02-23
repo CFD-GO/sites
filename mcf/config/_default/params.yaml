@@ -29,7 +29,7 @@ article:
   showBreadcrumbs: true
   showDraftLabel: true
   showEdit: true
-  editURL: 'https://github.com/CFD-GO/TCLB_site/tree/master/content/'
+  editURL: 'https://github.com/CFD-GO/sites/tree/master/content/'
   editAppendPath: true
   showHeadingAnchors: true
   showPagination: true
