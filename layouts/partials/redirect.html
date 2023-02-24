@@ -1,2 +1,36 @@
-{{ $value := "" }}
-{{ return $value }}
+{{- $site := .Site.Params -}}
+{{- $page := .Params -}}
+{{- $value := "" -}}
+{{- $target := "" -}}
+{{- if $page.sites -}}
+{{- if in $page.sites $site.Sitesme -}}
+{{- $target = $site.Sitesme -}}
+{{- else -}}
+{{- $target = index $page.sites 0 -}}
+{{- end -}}
+{{- else -}}
+{{- range $key, $url := $site.Sites -}}
+{{- if index $page $key -}}
+{{- if $target -}}
+{{- if eq $key $site.Sitesme -}}
+{{- $target = $site.Sitesme -}}
+{{- end -}}
+{{- else -}}
+{{- $target = $key -}}
+{{- end -}}
+{{- else -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- if $target -}}
+{{- if eq $target $site.Sitesme -}}
+{{- $value = "" -}}
+{{- else -}}
+{{- if index $site.Sites $target -}}
+{{- $value = printf "%s%s" (index $site.Sites $target) .RelPermalink -}} 
+{{- else -}}
+<b>Warning: Bad sites identifier</b>
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- return $value -}}

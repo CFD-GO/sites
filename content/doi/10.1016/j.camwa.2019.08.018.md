@@ -7,13 +7,13 @@ title: A cascaded phase-field lattice Boltzmann model for the simulation of inco
 tags:
   - publication
 authors:
-  - G. Gruszczyński
-  - T. Mitchell
-  - C. Leonardi
-  - Ł. Łaniewski-Wołłk
-  - T. Barber
-people:
+  - G Gruszczynski
   - T Mitchell
+  - C Leonardi
+  - L Laniewski-Wollk
+  - T Barber
+tclb:
+  - publications
 weight: 0
 ---
 

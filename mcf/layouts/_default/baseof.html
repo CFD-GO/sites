@@ -1,12 +1,13 @@
-{{ $value := partial "redirect.html" . }}
+{{- $value := partial "redirect.html" . -}}
 {{- if $value -}}
 <!DOCTYPE html>
 <html>
-  <head>
+<!--  <head>
     <meta http-equiv="refresh" content="0; url='{{ $value }}'" />
-  </head>
+  </head> -->
   <body>
-    <p>Please follow <a href="{{ $value }}">this link</a>.</p>
+<!--    <p>Please follow <a href="{{ $value }}">this link</a>.</p> -->
+    <p>Would be redirected to <a href="{{ $value }}">{{ $value }}</a>.</p>
   </body>
 </html>
 {{- else -}}
@@ -26,6 +27,7 @@
   data-default-appearance="{{ .Site.Params.defaultAppearance | default "light" }}"
   data-auto-appearance="{{ .Site.Params.autoSwitchAppearance | default "true" }}"
 >
+
   {{- partial "head.html" . -}}
   <body
     class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"

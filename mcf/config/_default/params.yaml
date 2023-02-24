@@ -54,3 +54,8 @@ taxonomy:
   showTermCount: true
 fathomAnalytics: {}
 verification: {}
+
+sitesme: mcf
+sites:
+  mcf:  https://mcf.tclb.io
+  tclb: https://tclb.io
