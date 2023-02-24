@@ -1,0 +1,30 @@
+{{- $value := partial "redirect.html" . -}}
+{{- if $value -}}
+<!DOCTYPE html>
+<html>
+<!--  <head>
+    <meta http-equiv="refresh" content="0; url='{{ $value }}'" />
+  </head> -->
+  <body>
+<!--    <p>Please follow <a href="{{ $value }}">this link</a>.</p> -->
+    <p>Would be redirected to <a href="{{ $value }}">{{ $value }}</a>.</p>
+  </body>
+</html>
+{{- else -}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              {{ partial "sidebar.html" . }}
+              {{ block "main" . }}
+              {{ end }}
+          </div>
+      </div>
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+</html>
+{{- end -}}

@@ -36,5 +36,9 @@ params:
 #    gitlab: full profile url in gitlab
 #    youtube: full profile url in youtube
 #    whatsapp: wa.me service link
+  sitesme: tclb
+  sites:
+    mcf:  https://mcf.tclb.io
+    tclb: https://tclb.io
 taxonomies:
   author: authors
