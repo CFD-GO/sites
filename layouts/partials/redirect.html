@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-<!--  <head>
+{{ if eq hugo.Environment "production" }}
+  <head>
     <meta http-equiv="refresh" content="0; url='{{ .value }}'" />
-  </head> -->
+  </head>
+{{ else }}
   <body>
-<!--    <p>Please follow <a href="{{ .value }}">this link</a>.</p> -->
     <p>Would be redirected to <a href="{{ .value }}">{{ .value }}</a>.</p>
   </body>
+{{ end }}
 </html>
