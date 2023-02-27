@@ -18,6 +18,8 @@ auto_content: yes                        # DELETE THIS TO NOT AUTO GENERATE CONT
 auto_data: yes                           # DELETE THIS TO NOT AUTO GENERATE METADATA
 image: /img/doi/10.1016/j.camwa.2015.12.043/firstpage.png
 showonlyimage: yes
+tclb:
+- publications
 ---
 [Ł. Łaniewski-Wołłk](https://www.scopus.com/authid/detail.uri?authorId=56719775800), [J. Rokicki](https://www.scopus.com/authid/detail.uri?authorId=7004344535)
 
