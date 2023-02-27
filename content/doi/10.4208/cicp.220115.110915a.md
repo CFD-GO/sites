@@ -1,16 +1,28 @@
 ---
-showonlyimage: true
-draft: false
-image: img/a4-paper.jpg
-date: 2016-11-05T18:25:22+05:30
-title: Single Component Multiphase Lattice Boltzmann Method for Taylor/Bretherton Bubble Train Flow Simulations
-tags:
-  - publication
-  - M. Dzikowski
-  - Ł. Łaniewski-Wołłk
-  - J. Rokicki
-weight: 0
+doi: 10.4208/cicp.220115.110915a
+title: Single component multiphase lattice boltzmann method for taylor/bretherton
+  bubble train flow simulations
+authors:
+- M Dzikowski
+- L Laniewski-Wollk
+- J Rokicki
+realauthors:
+- M. Dzikowski
+- L. Łaniewski-Wołłk
+- J. Rokicki
+keywords:
+- flow between plates
+- 'key words: bretherton problem'
+- lattice boltzmann method
+- microchannel simulation
+- multiphase flow
+date: '2016-04-01'
+journal: Communications in Computational Physics
+publisher: Global Science Pressinfo@global-sci.org
+auto_content: yes                        # DELETE THIS TO NOT AUTO GENERATE CONTENT
+auto_data: yes                           # DELETE THIS TO NOT AUTO GENERATE METADATA
 ---
+[M. Dzikowski](https://www.scopus.com/authid/detail.uri?authorId=57188845641), [L. Łaniewski-Wołłk](https://www.scopus.com/authid/detail.uri?authorId=56719775800), [J. Rokicki](https://www.scopus.com/authid/detail.uri?authorId=7004344535)
 
-M. Dzikowski, Ł. Łaniewski-Wołłk, J. Rokicki
-https://doi.org/10.4208/cicp.220115.110915a
+## Abstract
+Copyright © Global-Science Press 2016.In this study long bubble rising in a narrow channel was investigated using multiphase lattice Boltzmann method. The problem is known as a Bretherton or Taylor bubble flow [2] and is used here to verify the performance of the scheme proposed by [13]. The scheme is modified by incorporation of multiple relaxation time (MRT) collision scheme according to the original suggestion of the author. The purpose is to improve the stability of the method. The numerical simulation results show a good agreement with analytic solution provided by [2]. Moreover the convergence study demonstrates that the method achieves more than the first order of convergence. The paper investigates also the influence of simulation parameters on the interface resolution and shape.
