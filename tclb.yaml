@@ -1,7 +1,9 @@
 baseurl: 'https://tclb.io/'
 canonifyURLs: false
 title: TCLB Solver
-theme: hugo-creative-portfolio-theme
+theme: 
+  - tclb
+  - hugo-creative-portfolio-theme
 languageCode: en-us
 disqusShortname: ''
 googleAnalytics: ''

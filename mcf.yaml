@@ -1,0 +1,107 @@
+theme:
+  - mcf
+  - congo
+defaultContentLanguage: en
+enableRobotsTXT: true
+paginate: 15
+summaryLength: 0
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+title: "Modelling Complex Fluids group"
+description: 'Modelling Complex Fluids group at the University of Queensland'
+copyright: '&copy; 2023 MCF'
+dateFormat: 2 January 2006
+menus:
+  main:
+    - name: News
+      pageRef: mcf/news
+      weight: 20
+    - name: People
+      pageRef: mcf/people
+      weight: 30
+    - name: Publications
+      pageRef: mcf/publications
+      weight: 40
+    - name: Grants
+      pageRef: mcf/grants
+      weight: 50
+    - name: Jobs
+      pageRef: mcf/jobs
+      weight: 60
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+
+params:
+  recentProp: "Params.mcf"
+  recentValue:
+    - news
+  colorScheme: congo
+  defaultAppearance: light
+  autoSwitchAppearance: true
+  enableSearch: true
+  enableCodeCopy: true
+  header:
+    layout: basic
+    showTitle: true
+  footer:
+    showCopyright: true
+    showThemeAttribution: true
+    showAppearanceSwitcher: true
+    showScrollToTop: true
+  homepage:
+    layout: custom
+    showRecent: true
+    recentLimit: 5
+  article:
+    showDate: true
+    showDateUpdated: false
+    showAuthor: true
+    showBreadcrumbs: true
+    showDraftLabel: true
+    showEdit: true
+    editURL: 'https://github.com/CFD-GO/sites/edit/master/content/'
+    editAppendPath: true
+    showHeadingAnchors: true
+    showPagination: true
+    invertPagination: false
+    showReadingTime: true
+    showTableOfContents: true
+    showTaxonomies: false
+    showWordCount: false
+    showComments: false
+  list:
+    showBreadcrumbs: true
+    showSummary: false
+    showTableOfContents: true
+    showTaxonomies: false
+    groupByYear: false
+    paginationWidth: 1
+  sitemap:
+    excludedKinds:
+      - taxonomy
+      - term
+  taxonomy:
+    showTermCount: true
+  fathomAnalytics: {}
+  verification: {}
+
+  sitesme: mcf
+  sites:
+    mcf:  https://mcf.tclb.io
+    tclb: https://tclb.io
+
+taxonomies:
+  tag: tags
+  mcf: mcf
+  author: authors
