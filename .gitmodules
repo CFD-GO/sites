@@ -1,6 +1,6 @@
 [submodule "mcf/themes/congo"]
-	path = mcf/themes/congo
+	path = themes/congo
 	url = https://github.com/jpanther/congo.git
 [submodule "tclb/themes/hugo-creative-portfolio-theme"]
-	path = tclb/themes/hugo-creative-portfolio-theme
+	path = themes/hugo-creative-portfolio-theme
 	url = https://github.com/llaniewski/hugo-creative-portfolio-theme
