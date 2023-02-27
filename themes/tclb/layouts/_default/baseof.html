@@ -1,15 +1,6 @@
-{{- $value := partial "redirect.html" . -}}
+{{- $value := partial "re_url.html" . -}}
 {{- if $value -}}
-<!DOCTYPE html>
-<html>
-<!--  <head>
-    <meta http-equiv="refresh" content="0; url='{{ $value }}'" />
-  </head> -->
-  <body>
-<!--    <p>Please follow <a href="{{ $value }}">this link</a>.</p> -->
-    <p>Would be redirected to <a href="{{ $value }}">{{ $value }}</a>.</p>
-  </body>
-</html>
+{{- partial "redirect.html" (dict "value" $value) -}}
 {{- else -}}
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
