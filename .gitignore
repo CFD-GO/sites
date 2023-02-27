@@ -4,3 +4,4 @@ public/
 .Rhistory
 .Rproj*
 .Rproj.user
+.hugo_build.lock
