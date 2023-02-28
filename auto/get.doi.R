@@ -3,6 +3,8 @@
 
 # also Jon: 57192239242
 
+rm(list=ls())
+
 tab=read.csv(na.strings = "NA", stringsAsFactors = FALSE,quote = '"',strip.white = TRUE, textConnection('
 id,                           scopus_id,                  orcid,      tclb,            mcf,       ccfd
 "C Leonardi",       "25646377900",  "0000-0001-8596-9125",        no,       lecturer,         no
@@ -18,6 +20,7 @@ id,                           scopus_id,                  orcid,      tclb,     
 "J McCullough", "57611788200,57192239242",                     NA,      user,     alumni-phd,         no
 "D Wang",                   "57200546044",  "0000-0002-2804-4369",      user,     alumni-phd,         no
 "M Dzikowski",           "57188845641",  "0000-0001-5709-7235",    mcontr,             no, alumni-phd
+"S Kubacki", "57675170600", NA, no, no, hab
 '))
 
 tab$scopus_id = strsplit(tab$scopus_id,",")
@@ -73,7 +76,7 @@ id_map = function(id_type) {
 auto_id = function(x) paste(substr(to_latin(x$`ce:initials`),1,1), to_latin(x$`ce:surname`))
 gen_id = function(x) { if (x$'@auid' %in% names(scopus_id_map)) scopus_id_map[[x$'@auid']] else auto_id(x)  }
 pull_value = function(data,name) sapply(data, function(x) null.is.na(x[[name]]))
-pull_links = function(data,name) sapply(data, function(x) scopus_links(x)[[name]])
+pull_links = function(data,name) sapply(data, function(x) null.is.na(scopus_links(x)[[name]]))
 pull_list  = function(data,name) lapply(data, function(x) x[[name]])
 
 readPost = function(filename) {
@@ -100,27 +103,36 @@ scopus_id_map = id_map("scopus_id")
 orcid_map = id_map("orcid")
 
 ids = do.call(c, tab$scopus_id)
-works_tab = NULL
 works = NULL
-for (id in ids) {
+fn = "auto/works.Rdata"
+
+if (file.exists(fn)) load(fn)
+sel = setdiff(ids, names(works))
+works[sel] = lapply(sel, function(id) {
   cat(scopus_id_map[[id]]," (",id,")\n", sep="")
   ret = scopus_works(id)
-  works = c(works, ret)
-}
+})
+save(works,file=fn)
 
-
-works = works[!duplicated(pull_links(works, "self"))]
-works_tab = data.frame(title=pull_value(works, 'dc:title'),
-                       doi=pull_value(works, 'prism:doi'),
-                       url=pull_links(works, "self"),
-                       type=pull_value(works, 'subtypeDescription'),
+tmp = do.call(c, works)
+tmp = tmp[!duplicated(pull_links(tmp, "self"))]
+works_tab = data.frame(title=pull_value(tmp, 'dc:title'),
+                       doi=pull_value(tmp, 'prism:doi'),
+                       url=pull_links(tmp, "self"),
+                       ft_url=pull_links(tmp, "full-text"),
+                       type=pull_value(tmp, 'subtypeDescription'),
                        stringsAsFactors = FALSE)
 
-works_full = lapply(works_tab$url, function(url) {
+works_full = NULL
+fn = "auto/works_full.Rdata"
+
+if (file.exists(fn)) load(fn)
+sel = setdiff(works_tab$url, names(works_full))
+works_full[sel] = lapply(sel, function(url) {
   print(url)
   scopus_json(url)
 })
-
+save(works_full, file=fn)
 
 update.post = function(fn, data, content) {
   if (file.exists(fn)) {
@@ -215,7 +227,7 @@ ret = lapply(rows(tab), function(x) {
 })
 
 ##### Download elsevier PDFs
-ft_links =  sapply(works, function(x) null.is.na(scopus_links(x)$'full-text'))
+ft_links = work_tab$ft_url
 sel = !is.na(ft_links) & !is.na(works_tab$doi)
 for (i in which(sel)) {
   print(works_tab$doi[i])
@@ -229,34 +241,3 @@ for (i in which(sel)) {
 }
 #######
 
-
-
-do.call(rbind,lapply(person,function(x) lapply(x$name,function(x) if (is.list(x)) x$value else x)))
-
-ret = rorcid::orcid_works(id)
-works = ret$`0000-0001-6618-0532`$works
-
-get.doi = function(x) {
-  doi = x$`external-id-value`[x$`external-id-type`=="doi"]
-  if (length(doi) == 0) NA else doi[1]
-}
-
-works$doi = sapply(works$`external-ids.external-id`, get.doi)
-
-cbind(works$type,works$doi)
-
-doi = sapply(works$`external-ids.external-id`, get.doi)
-doi = unique(doi)
-doi = sort(doi[!is.na(doi)])
-
-crworks = rcrossref::cr_works(doi)
-
-crworks$data$author
-crworks$data$created
-crworks$data$abstract
-
-works_tab$doi[1]
-url = "https://api.crossref.org/works/10.1016/j.renene.2023.01.066"
-ret = httr::GET(url, httr::accept_json())
-ret = httr::content(ret)
-ret$message$link

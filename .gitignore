@@ -5,3 +5,4 @@ public/
 .Rproj*
 .Rproj.user
 .hugo_build.lock
+auto/*.Rdata
