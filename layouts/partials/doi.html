@@ -1,14 +1,27 @@
 {{- $page := .page -}}
+{{- $site := .site -}}
 {{- $article := .article -}}
+{{- $url := "" -}}
+{{- $link := "" -}}
+{{- $linktext := "LINK" -}}
+{{- with $article.Params.redirect -}}
+{{-   $link = . -}}
+{{- else -}}
+{{    $url = $article.RelPermalink }}
+{{- end -}}
+{{- with $article.Params.doi -}}
+{{-   $doiurl := ( printf "https://doi.org/%s" . ) -}}
+{{-   if eq $link "" -}}
+{{-     $link = $doiurl -}}
+{{-   end -}}
+{{-   if eq $doiurl $link -}}
+{{-     $linktext = "DOI" -}}
+{{-   end -}}
+{{- end -}}
 {{- range $key, $value := .article.Params.realauthors -}}
-{{ partial "pub_author.html" (dict "id" $key "name" $value "page" $page )}},
+{{ partial "pub_author.html" (dict "id" $key "name" $value "page" $page "site" $site )}},
 {{ end -}}
-<a
-href="{{ with $article.Params.redirect }}
-  {{ . }}
-{{ else }}
-  {{ $article.RelPermalink }}
-{{ end }}"
-aria-label="{{ $article.Title | emojify }}"
->
-<i>{{- $article.Title -}}</i></a>, {{ $article.Params.journal }}, {{ $article.Params.Date.Year }}
+{{ if $url }}<a href="{{ $url }}" aria-label="{{ $article.Title | emojify }}" >{{ end }}
+<i>{{- $article.Title -}}</i>
+{{ if $url }}</a>{{ end }}, {{ $article.Params.journal }}, {{ $article.Params.Date.Year }},
+{{- with $article.Params.doi -}}<small> <a href="https://doi.org/{{ . }}">[{{ $linktext }}]</a></small>{{- end -}}

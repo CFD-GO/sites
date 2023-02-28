@@ -1,2 +1,12 @@
-<a href="/authors/{{ .id | urlize }}">
-    {{- if eq (lower .id) (lower .page.Params.short) -}}<b>{{ .name }}</b>{{- else -}}{{ .name }}{{- end -}} </a>
+{{- $site := .site -}}
+{{- $id := .id -}}
+{{- $url := "" -}}
+{{- $purl := (printf "/people/%s/" ($id | urlize)) -}}
+{{- with .site -}}
+{{-   range where .RegularPages "RelPermalink" $purl -}}
+{{-     $url = .RelPermalink -}}
+{{-   end -}}
+{{- end -}}
+{{- if $url -}}<a href="{{ $url }}">{{- end -}}
+    {{- if eq (lower .id) (lower .page.Params.short) -}}<b>{{ .name }}</b>{{- else -}}{{ .name }}{{- end -}}
+{{- if $url -}}</a>{{- end -}}
