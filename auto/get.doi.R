@@ -122,45 +122,7 @@ works_full = lapply(works_tab$url, function(url) {
 })
 
 
-
-ret = lapply(works_full, function(x) {
-  data = list(
-    doi=x$coredata$`prism:doi`,
-    title=x$coredata$`dc:title`,
-    authors=sapply(x$authors$author,gen_id),
-    keywords=to_tag(pull_value(x$authkeywords$`author-keyword`,"$")),
-    date=x$coredata$`prism:coverDate`,
-    journal=x$coredata$`prism:publicationName`,
-    publisher=x$coredata$`dc:publisher`,
-    auto_content=TRUE,
-    auto_data=TRUE
-  )
-  cat(data$doi,"...\n")
-  
-  data$redirect = paste0("https://doi.org/", data$doi) 
-  
-  realauthors = lapply(x$authors$author,function(x) paste(x$`ce:initials`,x$`ce:surname`))
-  names(realauthors) = data$authors
-  data$realauthors = realauthors
-  
-
-  au = sapply(names(realauthors), function(n) paste0("{{< author \"", n, "\" \"", realauthors[[n]],"\" >}}"))
-
-  content = c(
-    paste0(au, collapse=", "),
-    "",
-    "## Abstract",
-    x$coredata$`dc:description`
-  )
-  
-  fn = paste0("content/doi/",data$doi,".md")
-  
-  png = paste0("/img/doi/",data$doi,"/firstpage.png")
-  if (file.exists(paste0("static",png))) {
-    data$image = png
-    data$showonlyimage = TRUE
-  }
-  
+update.post = function(fn, data, content) {
   if (file.exists(fn)) {
     post = readPost(fn)
     if (is.null(post$data$auto_data)) post$data$auto_data = FALSE
@@ -185,10 +147,72 @@ ret = lapply(works_full, function(x) {
             auto_content="DELETE THIS TO NOT AUTO GENERATE CONTENT",
             auto_data="DELETE THIS TO NOT AUTO GENERATE METADATA",
             redirect="DELETE THIS TO NOT REDIRECT")
+}
+
+
+ret = lapply(works_full, function(x) {
+  data = list(
+    doi=x$coredata$`prism:doi`,
+    title=x$coredata$`dc:title`,
+    authors=sapply(x$authors$author,gen_id),
+    keywords=to_tag(pull_value(x$authkeywords$`author-keyword`,"$")),
+    date=x$coredata$`prism:coverDate`,
+    journal=x$coredata$`prism:publicationName`,
+    publisher=x$coredata$`dc:publisher`,
+    auto_content=TRUE,
+    auto_data=TRUE
+  )
+  cat(data$doi,"...\n")
+  
+  data$redirect = paste0("https://doi.org/", data$doi) 
+  
+  realauthors = lapply(x$authors$author,function(x) paste(x$`ce:initials`,x$`ce:surname`))
+  names(realauthors) = data$authors
+  data$realauthors = realauthors
+
+  au = sapply(names(realauthors), function(n) paste0("{{< author \"", n, "\" \"", realauthors[[n]],"\" >}}"))
+
+  content = c(
+    paste0(au, collapse=", "),
+    "",
+    "## Abstract",
+    x$coredata$`dc:description`
+  )
+  
+  fn = paste0("content/doi/",data$doi,".md")
+  
+  png = paste0("/img/doi/",data$doi,"/firstpage.png")
+  if (file.exists(paste0("static",png))) {
+    data$image = png
+    data$showonlyimage = TRUE
+  }
+  update.post(fn, data, content)
   fn
 })
 
-
+rows = function(tab) lapply(seq_len(nrow(tab)), function(i) lapply(tab, "[[",i))
+ret = lapply(rows(tab), function(x) {
+  fn = paste0("content/people/",sub(" ","-",tolower(x$id)),".md")
+  data = list(
+    short=x$id,
+    title=x$id,
+    redirect=FALSE,
+    auto_content=TRUE,
+    auto_data=TRUE
+  )
+  if (x$tclb != "no") {
+    if (x$tclb == "user") {
+      data$tclb = c("user")
+    } else {
+      data$tclb = c("people","user",x$tclb)
+    }
+  }
+  if (x$mcf != "no") data$mcf = c("people",x$mcf)
+  data$scopus = x$scopus_id
+  data$orcid = x$orcid
+  content = c("","{{< publist >}}")
+  update.post(fn, data, content)
+})
 
 ##### Download elsevier PDFs
 ft_links =  sapply(works, function(x) null.is.na(scopus_links(x)$'full-text'))
