@@ -1,5 +1,5 @@
 ---
-short: "T. Mitchell"
+short: "T Mitchell"
 title: "Travis Mitchell"
 mcf:
  - people
@@ -10,4 +10,4 @@ tclb:
 This is some guy
 
 ## Publications
-{{< publist "T Mitchell" >}}
+{{< publist >}}

@@ -1,5 +1,5 @@
 ---
-short: "Ł. Łaniewski-Wołłk"
+short: "L Laniewski-Wollk"
 title: "Łukasz Łaniewski-Wołłk"
 mcf:
  - people
@@ -10,4 +10,4 @@ tclb:
 I'm Łukasz
 
 ## Publications
-{{< publist "L Laniewski-Wollk" >}}
+{{< publist >}}
