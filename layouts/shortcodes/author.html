@@ -1,0 +1,5 @@
+{{ if .Get 1 }}
+{{ partial "pub_author.html" (dict "id" (.Get 0) "name" (.Get 1) "page" .Page )}}
+{{ else }}
+{{ partial "pub_author.html" (dict "id" (.Get 0) "name" (.Get 0) "page" .Page )}}
+{{ end }}

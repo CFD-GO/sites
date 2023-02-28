@@ -1,13 +1,14 @@
+{{- $page := .page -}}
+{{- $article := .article -}}
+{{- range $key, $value := .article.Params.realauthors -}}
+{{ partial "pub_author.html" (dict "id" $key "name" $value "page" $page )}},
+{{ end -}}
 <a
-href="{{ with $.Params.externalUrl }}
+href="{{ with $article.Params.redirect }}
   {{ . }}
 {{ else }}
-  {{ $.RelPermalink }}
+  {{ $article.RelPermalink }}
 {{ end }}"
-aria-label="{{ $.Title | emojify }}"
+aria-label="{{ $article.Title | emojify }}"
 >
-<i>{{ .Title }}</i>
-{{ range .Params.Authors }}
-{{ . }}
-{{ end }}
-</a>
+<i>{{- $article.Title -}}</i></a>, {{ $article.Params.journal }}, {{ $article.Params.Date.Year }}

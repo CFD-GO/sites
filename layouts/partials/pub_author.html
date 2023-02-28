@@ -1,0 +1,2 @@
+<a href="/authors/{{ .id | urlize }}">
+    {{- if eq (lower .id) (lower .page.Params.short) -}}<b>{{ .name }}</b>{{- else -}}{{ .name }}{{- end -}} </a>
