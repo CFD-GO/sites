@@ -48,12 +48,12 @@ scopus_works = function(author_id) {
   url = paste0("https://api.elsevier.com/content/search/scopus?query=AU-ID(",author_id,")")
   data = scopus_json(url)
   ret = c(ret, data$entry)
-  links = get.links(data)
+  links = scopus_links(data)
   while (! is.null(links$'next')) {
     url = links$'next'
     data = scopus_json(url)
     ret = c(ret, data$entry)
-    links = get.links(data)
+    links = scopus_links(data)
   }
   if (length(ret) != as.numeric(data$`opensearch:totalResults`)) stop("Wrong number of results")
   ret
@@ -88,7 +88,7 @@ writePost = function(post, filename, ...) {
   data_yaml = strsplit(yaml::as.yaml(post$data),"\n")[[1]]
   for (n in names(args)) {
     i = grep(paste0("^",n),data_yaml)
-    data_yaml[i] = sprintf("%-40s # %s",data_yaml[i],args[[n]])
+    data_yaml[i] = sprintf("%-50s # %s",data_yaml[i],args[[n]])
   }
   writeLines(c("---",data_yaml,"---",post$content),con = filename)
 }
@@ -128,7 +128,6 @@ ret = lapply(works_full, function(x) {
     doi=x$coredata$`prism:doi`,
     title=x$coredata$`dc:title`,
     authors=sapply(x$authors$author,gen_id),
-    realauthors=sapply(x$authors$author,function(x) paste(x$`ce:initials`,x$`ce:surname`)),
     keywords=to_tag(pull_value(x$authkeywords$`author-keyword`,"$")),
     date=x$coredata$`prism:coverDate`,
     journal=x$coredata$`prism:publicationName`,
@@ -138,13 +137,15 @@ ret = lapply(works_full, function(x) {
   )
   cat(data$doi,"...\n")
   
-  author.link = function(x){
-    nm = paste(x$`ce:initials`,x$`ce:surname`)
-    url = paste0("https://www.scopus.com/authid/detail.uri?authorId=",x$'@auid')
-    paste0("[",nm,"](",url,")")
-  }
-  au = sapply(x$authors$author,author.link)
+  data$redirect = paste0("https://doi.org/", data$doi) 
   
+  realauthors = lapply(x$authors$author,function(x) paste(x$`ce:initials`,x$`ce:surname`))
+  names(realauthors) = data$authors
+  data$realauthors = realauthors
+  
+
+  au = sapply(names(realauthors), function(n) paste0("{{< author \"", n, "\" \"", realauthors[[n]],"\" >}}"))
+
   content = c(
     paste0(au, collapse=", "),
     "",
@@ -164,6 +165,7 @@ ret = lapply(works_full, function(x) {
     post = readPost(fn)
     if (is.null(post$data$auto_data)) post$data$auto_data = FALSE
     if (is.null(post$data$auto_content)) post$data$auto_content = FALSE
+    if (is.null(post$data$redirect)) post$data$redirect = FALSE
     if (post$data$auto_data) { # true
       post$data = data
     } else {
@@ -177,9 +179,12 @@ ret = lapply(works_full, function(x) {
   
   if (! post$data$auto_content) post$data$auto_content = NULL
   if (! post$data$auto_data) post$data$auto_data = NULL
+  if (post$data$redirect == FALSE) post$data$redirect = NULL
   dir.create(dirname(fn),recursive = TRUE,showWarnings = FALSE)
   writePost(post, fn,
-            auto_content="DELETE THIS TO NOT AUTO GENERATE CONTENT", auto_data="DELETE THIS TO NOT AUTO GENERATE METADATA")
+            auto_content="DELETE THIS TO NOT AUTO GENERATE CONTENT",
+            auto_data="DELETE THIS TO NOT AUTO GENERATE METADATA",
+            redirect="DELETE THIS TO NOT REDIRECT")
   fn
 })
 
