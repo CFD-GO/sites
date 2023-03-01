@@ -16,6 +16,7 @@ keywords:
 date: '2018-10-01'
 journal: Applied Soft Computing Journal
 publisher: Elsevier Ltd
+scopus_cite: 5
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.asoc.2018.04.028 # DELETE THIS TO NOT REDIRECT

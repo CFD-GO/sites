@@ -18,6 +18,7 @@ keywords:
 date: '2008-01-01'
 journal: FEMS Microbiology Letters
 publisher: ~
+scopus_cite: 7
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1111/j.1574-6968.2007.00987.x # DELETE THIS TO NOT REDIRECT

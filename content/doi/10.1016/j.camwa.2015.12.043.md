@@ -11,6 +11,7 @@ keywords:
 date: '2016-02-01'
 journal: Computers and Mathematics with Applications
 publisher: Elsevier Ltd
+scopus_cite: 54
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.camwa.2015.12.043 # DELETE THIS TO NOT REDIRECT

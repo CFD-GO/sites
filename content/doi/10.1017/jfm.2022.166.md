@@ -15,6 +15,7 @@ keywords:
 date: '2022-05-25'
 journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
+scopus_cite: 2
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1017/jfm.2022.166     # DELETE THIS TO NOT REDIRECT

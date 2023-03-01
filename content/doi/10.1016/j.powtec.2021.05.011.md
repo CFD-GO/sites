@@ -15,6 +15,7 @@ keywords:
 date: '2021-09-01'
 journal: Powder Technology
 publisher: Elsevier B.V.
+scopus_cite: 4
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.powtec.2021.05.011 # DELETE THIS TO NOT REDIRECT

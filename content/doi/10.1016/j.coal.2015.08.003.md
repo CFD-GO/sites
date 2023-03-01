@@ -14,6 +14,7 @@ keywords:
 date: '2015-11-01'
 journal: International Journal of Coal Geology
 publisher: Elsevier
+scopus_cite: 17
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.coal.2015.08.003 # DELETE THIS TO NOT REDIRECT

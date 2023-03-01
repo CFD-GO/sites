@@ -17,6 +17,7 @@ date: '2011-08-11'
 journal: 'IEEE SSCI 2011: Symposium Series on Computational Intelligence - CICS 2011:
   2011 IEEE Symposium on Computational Intelligence in Cyber Security'
 publisher: ~
+scopus_cite: 1
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1109/CICYBS.2011.5949414 # DELETE THIS TO NOT REDIRECT

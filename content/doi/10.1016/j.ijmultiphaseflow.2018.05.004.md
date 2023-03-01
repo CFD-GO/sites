@@ -15,6 +15,7 @@ keywords:
 date: '2018-10-01'
 journal: International Journal of Multiphase Flow
 publisher: Elsevier Ltd
+scopus_cite: 34
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.ijmultiphaseflow.2018.05.004 # DELETE THIS TO NOT REDIRECT

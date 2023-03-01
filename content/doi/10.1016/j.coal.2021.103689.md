@@ -19,6 +19,7 @@ keywords:
 date: '2021-06-01'
 journal: International Journal of Coal Geology
 publisher: Elsevier B.V.
+scopus_cite: 15
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.coal.2021.103689 # DELETE THIS TO NOT REDIRECT

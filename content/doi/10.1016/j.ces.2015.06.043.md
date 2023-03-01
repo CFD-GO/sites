@@ -19,6 +19,7 @@ keywords:
 date: '2015-12-01'
 journal: Chemical Engineering Science
 publisher: Elsevier Ltd
+scopus_cite: 36
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.ces.2015.06.043 # DELETE THIS TO NOT REDIRECT

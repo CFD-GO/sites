@@ -7,7 +7,9 @@ tclb: user
 mcf:
 - people
 - alumni-phd
-scopus: '57611788200,57192239242'
+scopus:
+- '57611788200'
+- '57192239242'
 orcid: .na.character
 ---
 

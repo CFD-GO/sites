@@ -15,6 +15,7 @@ keywords:
 date: '2016-04-01'
 journal: Communications in Computational Physics
 publisher: Global Science Pressinfo@global-sci.org
+scopus_cite: 6
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.4208/cicp.220115.110915a # DELETE THIS TO NOT REDIRECT

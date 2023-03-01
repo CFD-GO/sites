@@ -11,6 +11,7 @@ keywords: []
 date: '2019-02-01'
 journal: Applied Optics
 publisher: OSA - The Optical Societycustserv@osa.org
+scopus_cite: 12
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1364/AO.58.000963     # DELETE THIS TO NOT REDIRECT

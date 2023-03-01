@@ -14,6 +14,7 @@ keywords:
 date: '2020-09-01'
 journal: International Journal of Multiphase Flow
 publisher: Elsevier Ltd
+scopus_cite: 9
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.ijmultiphaseflow.2020.103376 # DELETE THIS TO NOT REDIRECT

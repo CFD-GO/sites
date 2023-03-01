@@ -79,6 +79,9 @@ pull_value = function(data,name) sapply(data, function(x) null.is.na(x[[name]]))
 pull_links = function(data,name) sapply(data, function(x) null.is.na(scopus_links(x)[[name]]))
 pull_list  = function(data,name) lapply(data, function(x) x[[name]])
 
+rows = function(tab) lapply(seq_len(nrow(tab)), function(i) lapply(tab, "[[",i))
+
+
 readPost = function(filename) {
   f = enc2utf8(readLines(filename))
   fm = which(f == "---")[1:2]
@@ -134,6 +137,8 @@ works_full[sel] = lapply(sel, function(url) {
 })
 save(works_full, file=fn)
 
+cite = as.numeric(sapply(works_full, function(x) x$coredata$`citedby-count`))
+
 update.post = function(fn, data, content) {
   if (file.exists(fn)) {
     post = readPost(fn)
@@ -171,6 +176,7 @@ ret = lapply(works_full, function(x) {
     date=x$coredata$`prism:coverDate`,
     journal=x$coredata$`prism:publicationName`,
     publisher=x$coredata$`dc:publisher`,
+    scopus_cite=as.integer(x$coredata$`citedby-count`),
     auto_content=TRUE,
     auto_data=TRUE
   )
@@ -202,7 +208,7 @@ ret = lapply(works_full, function(x) {
   fn
 })
 
-rows = function(tab) lapply(seq_len(nrow(tab)), function(i) lapply(tab, "[[",i))
+
 ret = lapply(rows(tab), function(x) {
   fn = paste0("content/people/",sub(" ","-",tolower(x$id)),".md")
   data = list(
@@ -225,19 +231,4 @@ ret = lapply(rows(tab), function(x) {
   content = c("","{{< publist >}}")
   update.post(fn, data, content)
 })
-
-##### Download elsevier PDFs
-ft_links = work_tab$ft_url
-sel = !is.na(ft_links) & !is.na(works_tab$doi)
-for (i in which(sel)) {
-  print(works_tab$doi[i])
-  fn = paste0("~/doi/",works_tab$doi[i],".pdf")
-  dir.create(dirname(fn),recursive = TRUE,showWarnings = FALSE)
-  x = ft_links[i]
-  url = paste0(sub("article","object",x),"-main.pdf?httpAccept=*/*")
-  if (! file.exists(fn)) {
-    try(curl::curl_download(scopus_url(url),fn))
-  } else cat("exists\n")
-}
-#######
 

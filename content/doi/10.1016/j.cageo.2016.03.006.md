@@ -14,6 +14,7 @@ keywords:
 date: '2016-06-01'
 journal: Computers and Geosciences
 publisher: Elsevier Ltd
+scopus_cite: 12
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.cageo.2016.03.006 # DELETE THIS TO NOT REDIRECT

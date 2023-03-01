@@ -14,6 +14,7 @@ keywords:
 date: '2018-05-15'
 journal: Computers and Mathematics with Applications
 publisher: Elsevier Ltd
+scopus_cite: 3
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.camwa.2018.02.010 # DELETE THIS TO NOT REDIRECT

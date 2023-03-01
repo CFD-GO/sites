@@ -21,6 +21,7 @@ keywords:
 date: '2017-01-01'
 journal: Chemical Engineering Journal
 publisher: Elsevier B.V.
+scopus_cite: 99
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.cej.2017.05.135 # DELETE THIS TO NOT REDIRECT

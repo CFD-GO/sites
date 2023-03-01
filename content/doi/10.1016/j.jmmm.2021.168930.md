@@ -15,6 +15,7 @@ keywords:
 date: '2022-04-01'
 journal: Journal of Magnetism and Magnetic Materials
 publisher: Elsevier B.V.
+scopus_cite: 2
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.jmmm.2021.168930 # DELETE THIS TO NOT REDIRECT
