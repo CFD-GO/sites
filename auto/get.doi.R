@@ -21,8 +21,14 @@ id,                           scopus_id,                  orcid,      tclb,     
 "D Wang",                   "57200546044",  "0000-0002-2804-4369",      user,     alumni-phd,         no
 "M Dzikowski",           "57188845641",  "0000-0001-5709-7235",    mcontr,             no, alumni-phd
 "S Kubacki", "57675170600", NA, no, no, hab
+"P Baj", "56720306300", "0000-0002-7480-7750", no, no, adjunkt
+"T Bobinski", "56095852800", "0000-0003-0407-259X", no, no, adjunkt
+"S Gepner", "36194760400", "0000-0002-5115-2165", no, no, adjunkt
+"K Gumowski", "24341224700", "0000-0002-1751-0926", no, no, asystent
+"L Klotz", "56192339300", "0000-0003-1740-7635", no, no, asystent
+"Nikesh", "57195384063", "0000-0002-1423-8525", no, no, adjunkt
+"J Szumbarski", "6506430104", "0000-0003-1176-106X", no, no, profesor
 '))
-
 tab$scopus_id = strsplit(tab$scopus_id,",")
 
 scopus_token = readLines("~/.scopus_token")
