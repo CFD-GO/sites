@@ -84,7 +84,7 @@ params:
     showBreadcrumbs: true
     showSummary: false
     showTableOfContents: true
-    showTaxonomies: false
+    showTaxonomies: true
     groupByYear: false
     paginationWidth: 1
   sitemap:
@@ -105,3 +105,4 @@ taxonomies:
   tag: tags
   mcf: mcf
   author: authors
+  keyword: keywords
