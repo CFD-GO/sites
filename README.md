@@ -6,6 +6,16 @@ This repository hold the content and design of following web pages:
 # Contributing
 The sites are generated from common content with Hugo static webpage generator.
 
+
+## Download
+The repository uses git submodules for the external hugo themes (`hugo-creative-portfolio-theme` and `congo`). To download everything:
+```bash
+git clone git@github.com:CFD-GO/sites.git
+cd sites
+git submodule init
+git submodule update
+```
+
 ## Testing & preview
 
 When doing changes, you can inspect the results by running Hugo locally.
