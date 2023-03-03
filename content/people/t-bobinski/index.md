@@ -1,13 +1,13 @@
 ---
-short: S Kubacki
-title: S Kubacki
+short: T Bobinski
+title: T Bobinski
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 za:
 - people
-- hab
-scopus: '57675170600'
-orcid: .na.character
+- adjunkt
+scopus: '56095852800'
+orcid: 0000-0003-0407-259X
 ---
 
 {{< publist >}}

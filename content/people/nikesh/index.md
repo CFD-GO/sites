@@ -1,13 +1,13 @@
 ---
-short: S Kubacki
-title: S Kubacki
+short: Nikesh
+title: Nikesh
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 za:
 - people
-- hab
-scopus: '57675170600'
-orcid: .na.character
+- adjunkt
+scopus: '57195384063'
+orcid: 0000-0002-1423-8525
 ---
 
 {{< publist >}}

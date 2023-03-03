@@ -11,26 +11,26 @@ outputs:
     - RSS
     - JSON
 
-title: "Modelling Complex Fluids group"
-description: 'Modelling Complex Fluids group at the University of Queensland'
+title: "Zakład Aerodynamiki"
+description: 'Division of Aerodynamics at Warsaw University of Technology'
 copyright: '&copy; 2023 MCF'
 dateFormat: 2 January 2006
 menus:
   main:
     - name: News
-      pageRef: mcf/news
+      pageRef: za/news
       weight: 20
     - name: People
-      pageRef: mcf/people
+      pageRef: za/people
       weight: 30
     - name: Publications
-      pageRef: mcf/publications
+      pageRef: za/publications
       weight: 40
     - name: Grants
-      pageRef: mcf/grants
+      pageRef: za/grants
       weight: 50
     - name: Jobs
-      pageRef: mcf/jobs
+      pageRef: za/jobs
       weight: 60
 markup:
   goldmark:
@@ -43,7 +43,7 @@ markup:
     endLevel: 3
 
 params:
-  recentProp: "Params.mcf"
+  recentProp: "Params.za"
   recentValue:
     - news
   colorScheme: congo
@@ -96,7 +96,7 @@ params:
   fathomAnalytics: {}
   verification: {}
 
-  sitesme: mcf
+  sitesme: za
   sites:
     mcf:  https://mcf.tclb.io
     tclb: https://tclb.io
@@ -104,6 +104,6 @@ params:
 
 taxonomies:
   tag: tags
-  mcf: mcf
+  za: za
   author: authors
   keyword: keywords

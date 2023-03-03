@@ -7,6 +7,9 @@ tclb:
 - people
 - user
 - mcontr
+za:
+- people
+- alumni-phd
 scopus: '57188845641'
 orcid: 0000-0001-5709-7235
 ---
