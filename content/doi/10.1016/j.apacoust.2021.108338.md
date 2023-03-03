@@ -25,17 +25,17 @@ auto_content: yes                                  # DELETE THIS TO NOT AUTO GEN
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.apacoust.2021.108338 # DELETE THIS TO NOT REDIRECT
 realauthors:
-  Z Rarata: Z. Rarata
-  A Dacko: A. Dacko
-  T Barcinski: T. Barciński
-  S Polak: S. Polak
-  J Musial: J. Musiał
-  S Kubacki: S. Kubacki
-  T Kowalski: T. Kowalski
-  A Sikorski: A. Sikorski
-  J Baran: J. Baran
+- Z Rarata: Z. Rarata
+- A Dacko: A. Dacko
+- T Barcinski: T. Barciński
+- S Polak: S. Polak
+- J Musial: J. Musiał
+- S Kubacki: S. Kubacki
+- T Kowalski: T. Kowalski
+- A Sikorski: A. Sikorski
+- J Baran: J. Baran
 ---
-{{< author "Z Rarata" "Z. Rarata" >}}, {{< author "A Dacko" "A. Dacko" >}}, {{< author "T Barcinski" "T. Barciński" >}}, {{< author "S Polak" "S. Polak" >}}, {{< author "J Musial" "J. Musiał" >}}, {{< author "S Kubacki" "S. Kubacki" >}}, {{< author "T Kowalski" "T. Kowalski" >}}, {{< author "A Sikorski" "A. Sikorski" >}}, {{< author "J Baran" "J. Baran" >}}
+
 
 ## Abstract
-© 2021 Elsevier LtdThe vibro-acoustic environment generated during a rocket launch induces dynamic loads which may damage critical components of spacecraft and scientific instruments. The research is focused on the vibro-acoustic response of the Wide Field Imager (WFI) instrument subjected to an intense diffuse sound field. Noise-induced structural vibrations in low- to mid-frequency can be computed by means of coupled FEM-BEM numerical models. Nevertheless, this approach is unsuited to calculations of cavity-structure interactions of light-weight and thin structures. In this paper the application and assessment of the elasto-acoustic FEM-FEM coupling approach for the cavity - optical blocking thin foil filter interactions is investigated. The diffuse sound field excitation is reconstructed by matching values of the sound pressure level to these obtained from experimental measurements. The viscosity effects on the wave propagation in thin layers are included by using the visco-thermal fluid model. The accuracy and efficiency of this approach are investigated and results obtained are compared to measured data from a reverberant test chamber. The results show that a very good agreement is obtained in terms of the acoustic pressure in the vicinity of the optical blocking filter. The behaviour of mechanical vibrations is correctly reproduced, although some considerable discrepancies in the levels of the vibrations are observed. The case of strong coupling between the cavity acoustic field and the filter membrane is finally discussed.
+The vibro-acoustic environment generated during a rocket launch induces dynamic loads which may damage critical components of spacecraft and scientific instruments. The research is focused on the vibro-acoustic response of the Wide Field Imager (WFI) instrument subjected to an intense diffuse sound field. Noise-induced structural vibrations in low- to mid-frequency can be computed by means of coupled FEM-BEM numerical models. Nevertheless, this approach is unsuited to calculations of cavity-structure interactions of light-weight and thin structures. In this paper the application and assessment of the elasto-acoustic FEM-FEM coupling approach for the cavity - optical blocking thin foil filter interactions is investigated. The diffuse sound field excitation is reconstructed by matching values of the sound pressure level to these obtained from experimental measurements. The viscosity effects on the wave propagation in thin layers are included by using the visco-thermal fluid model. The accuracy and efficiency of this approach are investigated and results obtained are compared to measured data from a reverberant test chamber. The results show that a very good agreement is obtained in terms of the acoustic pressure in the vicinity of the optical blocking filter. The behaviour of mechanical vibrations is correctly reproduced, although some considerable discrepancies in the levels of the vibrations are observed. The case of strong coupling between the cavity acoustic field and the filter membrane is finally discussed.

@@ -20,14 +20,14 @@ auto_content: yes                                  # DELETE THIS TO NOT AUTO GEN
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.fuel.2020.117934 # DELETE THIS TO NOT REDIRECT
 realauthors:
-  A Roslin: A. Roslin
-  D Pokrajac: D. Pokrajac
-  K Wu: K. Wu
-  Y Zhou: Y. Zhou
+- A Roslin: A. Roslin
+- D Pokrajac: D. Pokrajac
+- K Wu: K. Wu
+- Y Zhou: Y. Zhou
 image: /img/doi/10.1016/j.fuel.2020.117934/firstpage.png
 showonlyimage: yes
 ---
-{{< author "A Roslin" "A. Roslin" >}}, {{< author "D Pokrajac" "D. Pokrajac" >}}, {{< author "K Wu" "K. Wu" >}}, {{< author "Y Zhou" "Y. Zhou" >}}
+
 
 ## Abstract
-© 2020This paper comprises the analysis of scanning electron microscopy (SEM) images, nuclear magnetic resonance (NMR) and mercury injection capillary pressure (MICP) data to quantify the pore distribution in coal matrix. We first generate the 3D pore system in the coal matrix based on the statistics of pore distribution obtained from 2D SEM images, and then extract the pore network using the maximal ball method. The influence of the reconstructed cube size and the 2D image resolution on the accuracy of the reconstructed 3D coal sample was analysed when generate the 3D digital coal smaple. It was observed that the highest resolution which was achieved for the studied samples (6 nm) resulted in the underestimation of porosity of the studied sample, and it is recommended for future to create several models with different resolution to find the most representative model, instead of apriori using the highest possible resolution. The extracted pore network was then used to analyse pore size distribution and perform capillary pressure simulation using pore network modeling. A comparison of the pore network analysis with NMR and measured MICP data demonstrated that the pore network extraction method simplified the results of distribution and underestimated the size of elongated pores and microfractures. The simulated and laboratory measured MICP shows significant difference partically bucease the network extraction method was not suitable for the studied samples and this could be overcomed by our future study of model MICP using direct simulation method in the reconstructed 3D model.
+This paper comprises the analysis of scanning electron microscopy (SEM) images, nuclear magnetic resonance (NMR) and mercury injection capillary pressure (MICP) data to quantify the pore distribution in coal matrix. We first generate the 3D pore system in the coal matrix based on the statistics of pore distribution obtained from 2D SEM images, and then extract the pore network using the maximal ball method. The influence of the reconstructed cube size and the 2D image resolution on the accuracy of the reconstructed 3D coal sample was analysed when generate the 3D digital coal smaple. It was observed that the highest resolution which was achieved for the studied samples (6 nm) resulted in the underestimation of porosity of the studied sample, and it is recommended for future to create several models with different resolution to find the most representative model, instead of apriori using the highest possible resolution. The extracted pore network was then used to analyse pore size distribution and perform capillary pressure simulation using pore network modeling. A comparison of the pore network analysis with NMR and measured MICP data demonstrated that the pore network extraction method simplified the results of distribution and underestimated the size of elongated pores and microfractures. The simulated and laboratory measured MICP shows significant difference partically bucease the network extraction method was not suitable for the studied samples and this could be overcomed by our future study of model MICP using direct simulation method in the reconstructed 3D model.

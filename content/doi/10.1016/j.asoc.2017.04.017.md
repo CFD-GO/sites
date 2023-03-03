@@ -20,13 +20,13 @@ auto_content: yes                                  # DELETE THIS TO NOT AUTO GEN
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.asoc.2017.04.017 # DELETE THIS TO NOT REDIRECT
 realauthors:
-  G Venturelli: G. Venturelli
-  E Benini: E. Benini
-  L Laniewski-Wollk: Ł. Łaniewski-Wołłk
+- G Venturelli: G. Venturelli
+- E Benini: E. Benini
+- L Laniewski-Wollk: Ł. Łaniewski-Wołłk
 image: /img/doi/10.1016/j.asoc.2017.04.017/firstpage.png
 showonlyimage: yes
 ---
-{{< author "G Venturelli" "G. Venturelli" >}}, {{< author "E Benini" "E. Benini" >}}, {{< author "L Laniewski-Wollk" "Ł. Łaniewski-Wołłk" >}}
+
 
 ## Abstract
-© 2017 Elsevier B.V.A surrogate-assisted (SA) evolutionary algorithm for Multiobjective Optimization Problems (MOOPs) is presented as a contribution to Soft Computing (SC) in Artificial Intelligence (AI). Such algorithm is grounded on the cooperation between a “pure” evolutionary algorithm and a Kriging based algorithm featuring the Expected Hyper-Volume Improvement (EHVI) metric. Comparison with state-of-art pure and Kriging-assisted algorithms over two- and three-objective test functions have demonstrated that the proposed algorithm can achieve high performance in the approximation of the Pareto-optimal front mitigating the drawbacks of its parent algorithms.
+A surrogate-assisted (SA) evolutionary algorithm for Multiobjective Optimization Problems (MOOPs) is presented as a contribution to Soft Computing (SC) in Artificial Intelligence (AI). Such algorithm is grounded on the cooperation between a “pure” evolutionary algorithm and a Kriging based algorithm featuring the Expected Hyper-Volume Improvement (EHVI) metric. Comparison with state-of-art pure and Kriging-assisted algorithms over two- and three-objective test functions have demonstrated that the proposed algorithm can achieve high performance in the approximation of the Pareto-optimal front mitigating the drawbacks of its parent algorithms.

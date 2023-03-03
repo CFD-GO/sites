@@ -20,11 +20,11 @@ auto_content: yes                                  # DELETE THIS TO NOT AUTO GEN
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.4208/cicp.220115.110915a # DELETE THIS TO NOT REDIRECT
 realauthors:
-  M Dzikowski: M. Dzikowski
-  L Laniewski-Wollk: L. Łaniewski-Wołłk
-  J Rokicki: J. Rokicki
+- M Dzikowski: M. Dzikowski
+- L Laniewski-Wollk: L. Łaniewski-Wołłk
+- J Rokicki: J. Rokicki
 ---
-{{< author "M Dzikowski" "M. Dzikowski" >}}, {{< author "L Laniewski-Wollk" "L. Łaniewski-Wołłk" >}}, {{< author "J Rokicki" "J. Rokicki" >}}
+
 
 ## Abstract
-Copyright © Global-Science Press 2016.In this study long bubble rising in a narrow channel was investigated using multiphase lattice Boltzmann method. The problem is known as a Bretherton or Taylor bubble flow [2] and is used here to verify the performance of the scheme proposed by [13]. The scheme is modified by incorporation of multiple relaxation time (MRT) collision scheme according to the original suggestion of the author. The purpose is to improve the stability of the method. The numerical simulation results show a good agreement with analytic solution provided by [2]. Moreover the convergence study demonstrates that the method achieves more than the first order of convergence. The paper investigates also the influence of simulation parameters on the interface resolution and shape.
+In this study long bubble rising in a narrow channel was investigated using multiphase lattice Boltzmann method. The problem is known as a Bretherton or Taylor bubble flow [2] and is used here to verify the performance of the scheme proposed by [13]. The scheme is modified by incorporation of multiple relaxation time (MRT) collision scheme according to the original suggestion of the author. The purpose is to improve the stability of the method. The numerical simulation results show a good agreement with analytic solution provided by [2]. Moreover the convergence study demonstrates that the method achieves more than the first order of convergence. The paper investigates also the influence of simulation parameters on the interface resolution and shape.

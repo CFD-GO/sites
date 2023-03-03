@@ -48,7 +48,7 @@ scopus_json = function(url, ...) {
 
 scopus_links = function(data) {
   x = lapply(data$link, function(x) x$'@href')
-  names(x) = sapply(data$link, function(x) x$'@ref')
+  names(x) = sapply(data$link, function(x) if (is.null(x$'@ref')) x$'@rel' else x$'@ref')
   x
 }
 
@@ -143,7 +143,9 @@ works_full[sel] = lapply(sel, function(url) {
 })
 save(works_full, file=fn)
 
-cite = as.numeric(sapply(works_full, function(x) x$coredata$`citedby-count`))
+works_tab$cite = as.numeric(sapply(works_full, function(x) x$coredata$`citedby-count`))
+plot(seq(0,1,len=length(works_tab$cite)),cumsum(sort(works_tab$cite,dec=TRUE))/sum(works_tab$cite), ylim=c(0,1))
+works_tab[order(works_tab$cite,decreasing = TRUE)[1:20],]
 
 update.post = function(fn, data, content) {
   if (file.exists(fn)) {
@@ -172,8 +174,10 @@ update.post = function(fn, data, content) {
             redirect="DELETE THIS TO NOT REDIRECT")
 }
 
+scopus_links(works_full[[1]]$coredata)
 
 ret = lapply(works_full, function(x) {
+  cat(x$coredata$`prism:doi`,"...\n")
   data = list(
     doi=x$coredata$`prism:doi`,
     title=x$coredata$`dc:title`,
