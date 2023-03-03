@@ -81,7 +81,7 @@ id_map = function(id_type) {
 
 auto_id = function(x) paste(substr(to_latin(x$`ce:initials`),1,1), to_latin(x$`ce:surname`))
 gen_id = function(x) { if (x$'@auid' %in% names(scopus_id_map)) scopus_id_map[[x$'@auid']] else auto_id(x)  }
-pull_value = function(data,name) sapply(data, function(x) null.is.na(x[[name]]))
+pull_value = function(data,name) if (name %in% names(data)) data[[name]] else sapply(data, function(x) null.is.na(x[[name]]))
 pull_links = function(data,name) sapply(data, function(x) null.is.na(scopus_links(x)[[name]]))
 pull_list  = function(data,name) lapply(data, function(x) x[[name]])
 
@@ -177,7 +177,8 @@ update.post = function(fn, data, content) {
 scopus_links(works_full[[1]]$coredata)
 
 ret = lapply(works_full, function(x) {
-  cat(x$coredata$`prism:doi`,"...\n")
+  
+  cat(scopus_links(x$coredata)$self, x$coredata$`prism:doi`,"...\n")
   data = list(
     doi=x$coredata$`prism:doi`,
     title=x$coredata$`dc:title`,
@@ -190,12 +191,12 @@ ret = lapply(works_full, function(x) {
     auto_content=TRUE,
     auto_data=TRUE
   )
-  cat(data$doi,"...\n")
   
   data$redirect = paste0("https://doi.org/", data$doi) 
   
   realauthors = lapply(x$authors$author,function(x) paste(x$`ce:initials`,x$`ce:surname`))
   names(realauthors) = data$authors
+  realauthors = lapply(seq_along(realauthors),function(i) realauthors[i])
   data$realauthors = realauthors
 
   au = sapply(names(realauthors), function(n) paste0("{{< author \"", n, "\" \"", realauthors[[n]],"\" >}}"))
@@ -220,7 +221,7 @@ ret = lapply(works_full, function(x) {
 
 
 ret = lapply(rows(tab), function(x) {
-  fn = paste0("content/people/",sub(" ","-",tolower(x$id)),".md")
+  fn = paste0("content/people/",sub(" ","-",tolower(x$id)),"/index.md")
   data = list(
     short=x$id,
     title=x$id,
@@ -236,6 +237,7 @@ ret = lapply(rows(tab), function(x) {
     }
   }
   if (x$mcf != "no") data$mcf = c("people",x$mcf)
+  if (x$ccfd != "no") data$za = c("people",x$ccfd)
   data$scopus = x$scopus_id
   data$orcid = x$orcid
   content = c("","{{< publist >}}")
