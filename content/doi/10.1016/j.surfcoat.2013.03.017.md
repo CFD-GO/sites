@@ -17,6 +17,7 @@ date: '2013-06-25'
 journal: Surface and Coatings Technology
 publisher: ~
 scopus_cite: 28
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.surfcoat.2013.03.017 # DELETE THIS TO NOT REDIRECT

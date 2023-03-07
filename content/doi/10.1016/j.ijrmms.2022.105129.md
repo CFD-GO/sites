@@ -19,8 +19,10 @@ date: '2022-07-01'
 journal: International Journal of Rock Mechanics and Mining Sciences
 publisher: Elsevier Ltd
 scopus_cite: 1
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.ijrmms.2022.105129 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - R Zhong: R. Zhong

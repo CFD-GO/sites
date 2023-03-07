@@ -13,6 +13,7 @@ date: '2010-08-15'
 journal: Journal of Computational and Applied Mathematics
 publisher: ~
 scopus_cite: 2
+pub_type: Conference Paper
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.cam.2009.08.089 # DELETE THIS TO NOT REDIRECT

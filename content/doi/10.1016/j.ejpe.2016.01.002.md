@@ -15,6 +15,7 @@ date: '2017-03-01'
 journal: Egyptian Journal of Petroleum
 publisher: Egyptian Petroleum Research Instituteresearch@epri.sci.eg
 scopus_cite: 10
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.ejpe.2016.01.002 # DELETE THIS TO NOT REDIRECT

@@ -16,8 +16,11 @@ date: '2021-09-01'
 journal: Powder Technology
 publisher: Elsevier B.V.
 scopus_cite: 4
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+tclb: publications
+mcf: publications
 redirect: https://doi.org/10.1016/j.powtec.2021.05.011 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - J McCullough: J.W.S. McCullough

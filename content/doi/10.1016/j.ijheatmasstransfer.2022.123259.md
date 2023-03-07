@@ -16,8 +16,10 @@ date: '2022-11-15'
 journal: International Journal of Heat and Mass Transfer
 publisher: Elsevier Ltd
 scopus_cite: 1
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+tclb: publications
 redirect: https://doi.org/10.1016/j.ijheatmasstransfer.2022.123259 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - G Gruszczynski: G. Gruszczyński

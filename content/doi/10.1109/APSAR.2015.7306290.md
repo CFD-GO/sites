@@ -20,6 +20,7 @@ journal: Proceedings of the 2015 IEEE 5th Asia-Pacific Conference on Synthetic A
   Radar, APSAR 2015
 publisher: Institute of Electrical and Electronics Engineers Inc.
 scopus_cite: 0
+pub_type: Conference Paper
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1109/APSAR.2015.7306290 # DELETE THIS TO NOT REDIRECT

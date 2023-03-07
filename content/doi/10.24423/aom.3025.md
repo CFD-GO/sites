@@ -15,6 +15,7 @@ date: '2019-01-01'
 journal: Archives of Mechanics
 publisher: Polish Academy of Sciences
 scopus_cite: 0
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.24423/aom.3025        # DELETE THIS TO NOT REDIRECT

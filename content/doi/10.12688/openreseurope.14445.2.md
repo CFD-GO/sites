@@ -33,6 +33,7 @@ date: '2022-01-01'
 journal: Open Research Europe
 publisher: F1000 Research Ltd
 scopus_cite: 1
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.12688/openreseurope.14445.2 # DELETE THIS TO NOT REDIRECT

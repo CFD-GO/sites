@@ -15,6 +15,7 @@ date: '2011-01-01'
 journal: Progress in Computational Fluid Dynamics
 publisher: Inderscience Publishers
 scopus_cite: 1
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1504/PCFD.2011.037570 # DELETE THIS TO NOT REDIRECT

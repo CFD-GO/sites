@@ -17,8 +17,10 @@ date: '2022-09-15'
 journal: Energy and Buildings
 publisher: Elsevier Ltd
 scopus_cite: 1
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.enbuild.2022.112297 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - J Mojumder: J.C. Mojumder

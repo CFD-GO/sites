@@ -11,6 +11,7 @@ date: '2016-11-25'
 journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
 scopus_cite: 18
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1017/jfm.2016.621     # DELETE THIS TO NOT REDIRECT

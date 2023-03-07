@@ -21,6 +21,7 @@ date: '2021-12-15'
 journal: Applied Acoustics
 publisher: Elsevier Ltd
 scopus_cite: 0
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.apacoust.2021.108338 # DELETE THIS TO NOT REDIRECT

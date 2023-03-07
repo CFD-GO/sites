@@ -9,6 +9,7 @@ date: '1999-08-10'
 journal: Journal of Computational Physics
 publisher: Academic Press Inc.
 scopus_cite: 57
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1006/jcph.1999.6282   # DELETE THIS TO NOT REDIRECT

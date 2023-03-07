@@ -15,6 +15,7 @@ date: '2009-12-01'
 journal: Computer Methods in Applied Mechanics and Engineering
 publisher: ~
 scopus_cite: 26
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.cma.2009.09.022 # DELETE THIS TO NOT REDIRECT

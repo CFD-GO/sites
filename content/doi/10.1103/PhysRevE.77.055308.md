@@ -12,6 +12,7 @@ date: '2008-05-30'
 journal: Physical Review E - Statistical, Nonlinear, and Soft Matter Physics
 publisher: ~
 scopus_cite: 35
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1103/PhysRevE.77.055308 # DELETE THIS TO NOT REDIRECT

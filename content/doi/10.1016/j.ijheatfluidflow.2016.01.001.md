@@ -15,6 +15,7 @@ date: '2016-04-01'
 journal: International Journal of Heat and Fluid Flow
 publisher: Elsevier B.V.
 scopus_cite: 41
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.ijheatfluidflow.2016.01.001 # DELETE THIS TO NOT REDIRECT

@@ -14,6 +14,7 @@ date: '2023-01-01'
 journal: Computer Physics Communications
 publisher: Elsevier B.V.
 scopus_cite: 0
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.cpc.2022.108548 # DELETE THIS TO NOT REDIRECT

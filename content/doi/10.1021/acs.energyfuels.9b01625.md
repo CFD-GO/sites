@@ -11,6 +11,7 @@ date: '2019-09-19'
 journal: Energy and Fuels
 publisher: American Chemical Societyservice@acs.org
 scopus_cite: 9
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1021/acs.energyfuels.9b01625 # DELETE THIS TO NOT REDIRECT

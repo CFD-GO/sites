@@ -16,6 +16,7 @@ date: '2012-01-01'
 journal: International Journal of Rock Mechanics and Mining Sciences
 publisher: Elsevier Ltd
 scopus_cite: 53
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.ijrmms.2012.07.018 # DELETE THIS TO NOT REDIRECT

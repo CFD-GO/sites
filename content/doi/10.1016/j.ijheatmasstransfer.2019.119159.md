@@ -15,8 +15,11 @@ date: '2020-03-01'
 journal: International Journal of Heat and Mass Transfer
 publisher: Elsevier Ltd
 scopus_cite: 5
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+tclb: publications
+mcf: publications
 redirect: https://doi.org/10.1016/j.ijheatmasstransfer.2019.119159 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - J McCullough: J.W.S. McCullough

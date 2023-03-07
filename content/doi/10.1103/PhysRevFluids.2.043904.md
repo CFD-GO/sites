@@ -13,6 +13,7 @@ date: '2017-04-01'
 journal: Physical Review Fluids
 publisher: American Physical Societyrevtex@aps.org
 scopus_cite: 24
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1103/PhysRevFluids.2.043904 # DELETE THIS TO NOT REDIRECT

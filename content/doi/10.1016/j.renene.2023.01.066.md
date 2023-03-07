@@ -16,8 +16,10 @@ date: '2023-03-01'
 journal: Renewable Energy
 publisher: Elsevier Ltd
 scopus_cite: 0
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.renene.2023.01.066 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - J Mojumder: J.C. Mojumder

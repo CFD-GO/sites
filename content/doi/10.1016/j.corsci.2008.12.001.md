@@ -19,6 +19,7 @@ date: '2009-07-01'
 journal: Corrosion Science
 publisher: ~
 scopus_cite: 17
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.corsci.2008.12.001 # DELETE THIS TO NOT REDIRECT

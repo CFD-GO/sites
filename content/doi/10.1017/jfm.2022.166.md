@@ -16,8 +16,11 @@ date: '2022-05-25'
 journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
 scopus_cite: 3
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+tclb: publications
+mcf: publications
 redirect: https://doi.org/10.1017/jfm.2022.166     # DELETE THIS TO NOT REDIRECT
 realauthors:
 - N Di Vaira: N.J. Di Vaira

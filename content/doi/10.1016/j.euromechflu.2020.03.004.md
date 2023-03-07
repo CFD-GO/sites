@@ -19,8 +19,10 @@ date: '2020-07-01'
 journal: European Journal of Mechanics, B/Fluids
 publisher: Elsevier Ltd
 scopus_cite: 9
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.euromechflu.2020.03.004 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - A Kamyar: A. Kamyar

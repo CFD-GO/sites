@@ -21,6 +21,7 @@ date: '2016-11-05'
 journal: 'Colloids and Surfaces A: Physicochemical and Engineering Aspects'
 publisher: Elsevier B.V.
 scopus_cite: 14
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.colsurfa.2016.08.028 # DELETE THIS TO NOT REDIRECT

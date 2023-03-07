@@ -17,8 +17,10 @@ date: '2022-04-01'
 journal: Journal of Rock Mechanics and Geotechnical Engineering
 publisher: Chinese Academy of Sciences
 scopus_cite: 2
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.jrmge.2021.05.003 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - M Masoudian: M.S. Masoudian

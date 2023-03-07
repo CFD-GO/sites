@@ -12,8 +12,10 @@ date: '2017-11-01'
 journal: Physical Review E
 publisher: American Physical Societyrevtex@aps.org
 scopus_cite: 106
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1103/PhysRevE.96.053301 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - A Fakhari: A. Fakhari
