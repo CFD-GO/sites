@@ -23,7 +23,6 @@ scopus_cite: 2
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
-tclb: publications
 redirect: https://doi.org/10.1016/j.jcp.2022.111753 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - C Schwarzmeier: C. Schwarzmeier

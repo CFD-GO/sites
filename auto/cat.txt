@@ -40,7 +40,7 @@
 10.1016/j.ijrmms.2012.07.018             _ _  # 2012-01-01 R Reisabadi, A Kaffash, S Shadizadeh -- Determination of optimal well trajectory during drilling and production based on borehole stability
 10.1016/j.ijrmms.2020.104259             _ _  # 2020-04-01 R Reisabadi, M Haghighi, A Salmachi, M Sayyafzadeh, A Khaksar -- Analytical modelling of coal failure in coal seam gas reservoirs in different stress regimes
 10.1016/j.ijrmms.2022.105129             X _  # 2022-07-01 R Zhong, T Mitchell, R Johnson, C Leonardi -- Efficient implicit methods for wellbore shear failure analysis during drilling and production in coalbeds
-10.1016/j.jcp.2022.111753                _ X  # 2023-01-15 C Schwarzmeier, M Holzer, T Mitchell, M Lehmann, F Hausl, U Rude -- Comparison of free-surface and conservative Allen–Cahn phase-field lattice Boltzmann method
+10.1016/j.jcp.2022.111753                _ _  # 2023-01-15 C Schwarzmeier, M Holzer, T Mitchell, M Lehmann, F Hausl, U Rude -- Comparison of free-surface and conservative Allen–Cahn phase-field lattice Boltzmann method
 10.1016/j.jmmm.2021.168930               X _  # 2022-04-01 M Abdul Aziz, S Aminossadati, C Leonardi -- Load response of magnetorheological (MR) plastomer dampers under applied magnetic fields
 10.1016/j.jmmm.2023.170396               X _  # 2023-02-15 M Aziz, S Aminossadati, C Leonardi -- Performance analysis of magnetorheological plastomer dampers with different annular shear gaps
 10.1016/j.jngse.2016.09.038              X _  # 2016-09-01 T Mitchell, C Leonardi -- Micromechanical investigation of fines liberation and transport during coal seam dewatering
