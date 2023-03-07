@@ -2,7 +2,7 @@
 {{- $site := .Site -}}
 {{- $author := $page.Params.short -}}
 {{- if .Get 0 -}}
-{{-   $author := .Get 0 -}}
+{{-   $author = .Get 0 -}}
 {{- end -}}
 <h3>Top Publications (<a href="/authors/{{ $author | urlize }}">View all</a>)</h3>
 <ul>

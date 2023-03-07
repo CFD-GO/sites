@@ -1,3 +1,4 @@
 ---
 title: Publications
+groupByYear: true
 ---
