@@ -5,6 +5,10 @@
 
 rm(list=ls())
 
+source("auto/lib.R")
+scopus_token = readLines("~/.scopus_token")
+
+
 tab=read.csv(na.strings = "NA", stringsAsFactors = FALSE,quote = '"',strip.white = TRUE, textConnection('
 id,                           scopus_id,                  orcid,      tclb,            mcf,       ccfd
 "C Leonardi",       "25646377900",  "0000-0001-8596-9125",        no,       lecturer,         no
@@ -21,93 +25,21 @@ id,                           scopus_id,                  orcid,      tclb,     
 "D Wang",                   "57200546044",  "0000-0002-2804-4369",      user,     alumni-phd,         no
 "M Dzikowski",           "57188845641",  "0000-0001-5709-7235",    mcontr,             no, alumni-phd
 "S Kubacki", "57675170600", NA, no, no, hab
+"P Baj", "56720306300", "0000-0002-7480-7750", no, no, adjunkt
+"T Bobinski", "56095852800", "0000-0003-0407-259X", no, no, adjunkt
+"S Gepner", "36194760400", "0000-0002-5115-2165", no, no, adjunkt
+"K Gumowski", "24341224700", "0000-0002-1751-0926", no, no, asystent
+"L Klotz", "56192339300", "0000-0003-1740-7635", no, no, asystent
+"Nikesh", "57195384063", "0000-0002-1423-8525", no, no, adjunkt
+"J Szumbarski", "6506430104", "0000-0003-1176-106X", no, no, profesor
 '))
-
 tab$scopus_id = strsplit(tab$scopus_id,",")
-
-scopus_token = readLines("~/.scopus_token")
-
-scopus_url = function(url, ...) {
-  args = list(...)
-  prs = httr::parse_url(url)
-  prs$query$apiKey = scopus_token
-  for (n in names(args)) prs$query[[n]] = args[[n]]
-  httr::build_url(prs)
-}
-
-scopus_json = function(url, ...) {
-  ret = httr::GET(scopus_url(url, ...), httr::accept_json())
-  httr::content(ret)[[1]]
-}
-
-scopus_links = function(data) {
-  x = lapply(data$link, function(x) x$'@href')
-  names(x) = sapply(data$link, function(x) x$'@ref')
-  x
-}
-
-scopus_works = function(author_id) {
-  ret = NULL
-  url = paste0("https://api.elsevier.com/content/search/scopus?query=AU-ID(",author_id,")")
-  data = scopus_json(url)
-  ret = c(ret, data$entry)
-  links = scopus_links(data)
-  while (! is.null(links$'next')) {
-    url = links$'next'
-    data = scopus_json(url)
-    ret = c(ret, data$entry)
-    links = scopus_links(data)
-  }
-  if (length(ret) != as.numeric(data$`opensearch:totalResults`)) stop("Wrong number of results")
-  ret
-}
-
-to_latin = function(x) stringi::stri_trans_general(x, id = "Latin-ASCII")
-to_tag = function(x) stringi::stri_trans_tolower(to_latin(x))
-null.is.na = function(x) if (is.null(x)) NA else x
-
-id_map = function(id_type) {
-  ret = do.call(rbind,lapply(seq_len(nrow(tab)), function(i) cbind(tab[[id_type]][[i]], tab$id[i])))
-  ret = ret[!is.na(ret[,1]),]
-  tmp = as.list(ret[,2]); names(tmp) = ret[,1]
-  tmp
-}
-
-auto_id = function(x) paste(substr(to_latin(x$`ce:initials`),1,1), to_latin(x$`ce:surname`))
-gen_id = function(x) { if (x$'@auid' %in% names(scopus_id_map)) scopus_id_map[[x$'@auid']] else auto_id(x)  }
-pull_value = function(data,name) sapply(data, function(x) null.is.na(x[[name]]))
-pull_links = function(data,name) sapply(data, function(x) null.is.na(scopus_links(x)[[name]]))
-pull_list  = function(data,name) lapply(data, function(x) x[[name]])
-
-rows = function(tab) lapply(seq_len(nrow(tab)), function(i) lapply(tab, "[[",i))
-
-
-readPost = function(filename) {
-  f = enc2utf8(readLines(filename))
-  fm = which(f == "---")[1:2]
-  if (length(fm) != 2) stop("wrong frontmatter delimiters")
-  list(data = yaml::yaml.load(f[(fm[1]+1):(fm[2]-1)]), content = f[(fm[2]+1):length(f)])
-}
-
-writePost = function(post, filename, ...) {
-  args = list(...)
-  data_yaml = strsplit(yaml::as.yaml(post$data),"\n")[[1]]
-  for (n in names(args)) {
-    i = grep(paste0("^",n),data_yaml)
-    data_yaml[i] = sprintf("%-50s # %s",data_yaml[i],args[[n]])
-  }
-  writeLines(c("---",data_yaml,"---",post$content),con = filename)
-}
-
-combine.list = function(a,b) {for (i in names(b)) a[[i]] = b[[i]]; a}
-
-
 scopus_id_map = id_map("scopus_id")
 orcid_map = id_map("orcid")
 
 ids = do.call(c, tab$scopus_id)
 works = NULL
-fn = "auto/works.Rdata"
+fn = "cache/works.Rdata"
 
 if (file.exists(fn)) load(fn)
 sel = setdiff(ids, names(works))
@@ -127,7 +59,7 @@ works_tab = data.frame(title=pull_value(tmp, 'dc:title'),
                        stringsAsFactors = FALSE)
 
 works_full = NULL
-fn = "auto/works_full.Rdata"
+fn = "cache/works_full.Rdata"
 
 if (file.exists(fn)) load(fn)
 sel = setdiff(works_tab$url, names(works_full))
@@ -137,37 +69,48 @@ works_full[sel] = lapply(sel, function(url) {
 })
 save(works_full, file=fn)
 
-cite = as.numeric(sapply(works_full, function(x) x$coredata$`citedby-count`))
+works_tab$cite = as.numeric(sapply(works_full, function(x) x$coredata$`citedby-count`))
+plot(seq(0,1,len=length(works_tab$cite)),cumsum(sort(works_tab$cite,dec=TRUE))/sum(works_tab$cite), ylim=c(0,1))
+works_tab[order(works_tab$cite,decreasing = TRUE)[1:20],]
 
-update.post = function(fn, data, content) {
-  if (file.exists(fn)) {
-    post = readPost(fn)
-    if (is.null(post$data$auto_data)) post$data$auto_data = FALSE
-    if (is.null(post$data$auto_content)) post$data$auto_content = FALSE
-    if (is.null(post$data$redirect)) post$data$redirect = FALSE
-    if (post$data$auto_data) { # true
-      post$data = data
-    } else {
-      post$data = combine.list(data, post$data)
-    }
-  } else {
-    post = list(data=data, concent=character(0))
-  }
-  
-  if (post$data$auto_content) post$content = content
-  
-  if (! post$data$auto_content) post$data$auto_content = NULL
-  if (! post$data$auto_data) post$data$auto_data = NULL
-  if (post$data$redirect == FALSE) post$data$redirect = NULL
-  dir.create(dirname(fn),recursive = TRUE,showWarnings = FALSE)
-  writePost(post, fn,
-            auto_content="DELETE THIS TO NOT AUTO GENERATE CONTENT",
-            auto_data="DELETE THIS TO NOT AUTO GENERATE METADATA",
-            redirect="DELETE THIS TO NOT REDIRECT")
+
+
+
+
+tclb_people = tab$id[tab$tclb != "no"]
+mcf_people = tab$id[tab$mcf != "no"]
+works_ids = lapply(works_full, function(x) sapply(x$authors$author,gen_id))
+sel = sapply(works_ids, function(x) any(x %in% c(tclb_people,mcf_people)))
+tmp = works_tab
+tmp$authors = sapply(works_ids, paste, collapse=", ")
+tmp$date = sapply(works_full, function(x) x$coredata$`prism:coverDate`)
+tmp = tmp[sel,]
+sel = !is.na(tmp$doi)
+tmp = tmp[sel,]
+
+
+if (file.exists("auto/cat.txt")) {
+  ret = read.table("auto/cat.txt")
+  names(ret) = c("doi","mcf","tclb")
+  ret$mcf = ret$mcf != "_"
+  ret$tclb = ret$tclb != "_"
+  tmp = merge(tmp, ret, by= "doi")
+  tmp$tclb[is.na(tmp$tclb)] = FALSE
+  tmp$mcf[is.na(tmp$mcf)] = FALSE
+} else {
+  tmp$tclb = FALSE
+  tmp$mcf = FALSE
 }
+l = paste0(sprintf("%-40s %s %s  ", tmp$doi, ifelse(tmp$mcf,"X","_"), ifelse(tmp$tclb,"X","_")), "# ",tmp$date, " ",tmp$authors, " -- ", tmp$title)
+l = l[order(tmp$doi)]
+writeLines(l, "auto/cat.txt")
 
+tclb_pub = tmp$doi[tmp$tclb]
+mcf_pub = tmp$doi[tmp$mcf]
 
 ret = lapply(works_full, function(x) {
+  
+  cat(scopus_links(x$coredata)$self, x$coredata$`prism:doi`,"...\n")
   data = list(
     doi=x$coredata$`prism:doi`,
     title=x$coredata$`dc:title`,
@@ -180,12 +123,21 @@ ret = lapply(works_full, function(x) {
     auto_content=TRUE,
     auto_data=TRUE
   )
-  cat(data$doi,"...\n")
   
+  if (!is.null(data$doi)) {
+    if (data$doi %in% tclb_pub) {
+    
+    }
+    if (data$doi %in% mcf_pub) {
+      
+    }
+  }
+    
   data$redirect = paste0("https://doi.org/", data$doi) 
   
   realauthors = lapply(x$authors$author,function(x) paste(x$`ce:initials`,x$`ce:surname`))
   names(realauthors) = data$authors
+  realauthors = lapply(seq_along(realauthors),function(i) realauthors[i])
   data$realauthors = realauthors
 
   au = sapply(names(realauthors), function(n) paste0("{{< author \"", n, "\" \"", realauthors[[n]],"\" >}}"))
@@ -210,7 +162,7 @@ ret = lapply(works_full, function(x) {
 
 
 ret = lapply(rows(tab), function(x) {
-  fn = paste0("content/people/",sub(" ","-",tolower(x$id)),".md")
+  fn = paste0("content/people/",sub(" ","-",tolower(x$id)),"/index.md")
   data = list(
     short=x$id,
     title=x$id,
@@ -226,6 +178,7 @@ ret = lapply(rows(tab), function(x) {
     }
   }
   if (x$mcf != "no") data$mcf = c("people",x$mcf)
+  if (x$ccfd != "no") data$za = c("people",x$ccfd)
   data$scopus = x$scopus_id
   data$orcid = x$orcid
   content = c("","{{< publist >}}")

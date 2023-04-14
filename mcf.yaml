@@ -69,13 +69,13 @@ params:
     showAuthor: true
     showBreadcrumbs: true
     showDraftLabel: true
-    showEdit: true
+    showEdit: false
     editURL: 'https://github.com/CFD-GO/sites/edit/master/content/'
     editAppendPath: true
     showHeadingAnchors: true
     showPagination: true
     invertPagination: false
-    showReadingTime: true
+    showReadingTime: false
     showTableOfContents: true
     showTaxonomies: false
     showWordCount: false
@@ -84,7 +84,7 @@ params:
     showBreadcrumbs: true
     showSummary: false
     showTableOfContents: true
-    showTaxonomies: false
+    showTaxonomies: true
     groupByYear: false
     paginationWidth: 1
   sitemap:
@@ -100,8 +100,10 @@ params:
   sites:
     mcf:  https://mcf.tclb.io
     tclb: https://tclb.io
+    za: https://za.tclb.io
 
 taxonomies:
   tag: tags
   mcf: mcf
   author: authors
+  keyword: keywords

@@ -8,7 +8,6 @@ mcf:
 - post-postdoc
 scopus: '56786451900'
 orcid: .na.character
-thumbnail: thumbnail.jpeg
 ---
 
 {{< publist >}}

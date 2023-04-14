@@ -2,11 +2,17 @@
 {{- $site := .Site -}}
 {{- $author := $page.Params.short -}}
 {{- if .Get 0 -}}
-{{-   $author := .Get 0 -}}
+{{-   $author = .Get 0 -}}
 {{- end -}}
-<h3>Publications (<a href="/authors/{{ $author | urlize }}">View all</a>)</h3>
+<h3>Top Publications (<a href="/authors/{{ $author | urlize }}">View all</a>)</h3>
 <ul>
-{{ range $value := where .Site.RegularPages ".Params.authors" "intersect" (slice $author) }}
+{{ range $value := first 5 ( sort (where .Site.RegularPages ".Params.authors" "intersect" (slice $author)) ".Params.scopus_cite" "desc") }}
+<li>{{ partial "doi.html" (dict "page" $page "site" $site "article" $value) }}</li>
+{{ end }}
+</ul>
+<h3>Recent Publications (<a href="/authors/{{ $author | urlize }}">View all</a>)</h3>
+<ul>
+{{ range $value := first 5 (where .Site.RegularPages ".Params.authors" "intersect" (slice $author)).ByDate.Reverse }}
 <li>{{ partial "doi.html" (dict "page" $page "site" $site "article" $value) }}</li>
 {{ end }}
 </ul>

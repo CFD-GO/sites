@@ -27,27 +27,28 @@ date: '2021-02-06'
 journal: Interface Focus
 publisher: Royal Society Publishing
 scopus_cite: 9
+pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1098/rsfs.2019.0119   # DELETE THIS TO NOT REDIRECT
 realauthors:
-  J McCullough: J.W.S. McCullough
-  R Richardson: R.A. Richardson
-  A Patronis: A. Patronis
-  R Halver: R. Halver
-  R Marshall: R. Marshall
-  M Ruefenacht: M. Ruefenacht
-  B Wylie: B.J.N. Wylie
-  T Odaker: T. Odaker
-  M Wiedemann: M. Wiedemann
-  B Lloyd: B. Lloyd
-  E Neufeld: E. Neufeld
-  G Sutmann: G. Sutmann
-  A Skjellum: A. Skjellum
-  D Kranzlmuller: D. Kranzlmüller
-  P Coveney: P.V. Coveney
+- J McCullough: J.W.S. McCullough
+- R Richardson: R.A. Richardson
+- A Patronis: A. Patronis
+- R Halver: R. Halver
+- R Marshall: R. Marshall
+- M Ruefenacht: M. Ruefenacht
+- B Wylie: B.J.N. Wylie
+- T Odaker: T. Odaker
+- M Wiedemann: M. Wiedemann
+- B Lloyd: B. Lloyd
+- E Neufeld: E. Neufeld
+- G Sutmann: G. Sutmann
+- A Skjellum: A. Skjellum
+- D Kranzlmuller: D. Kranzlmüller
+- P Coveney: P.V. Coveney
 ---
-{{< author "J McCullough" "J.W.S. McCullough" >}}, {{< author "R Richardson" "R.A. Richardson" >}}, {{< author "A Patronis" "A. Patronis" >}}, {{< author "R Halver" "R. Halver" >}}, {{< author "R Marshall" "R. Marshall" >}}, {{< author "M Ruefenacht" "M. Ruefenacht" >}}, {{< author "B Wylie" "B.J.N. Wylie" >}}, {{< author "T Odaker" "T. Odaker" >}}, {{< author "M Wiedemann" "M. Wiedemann" >}}, {{< author "B Lloyd" "B. Lloyd" >}}, {{< author "E Neufeld" "E. Neufeld" >}}, {{< author "G Sutmann" "G. Sutmann" >}}, {{< author "A Skjellum" "A. Skjellum" >}}, {{< author "D Kranzlmuller" "D. Kranzlmüller" >}}, {{< author "P Coveney" "P.V. Coveney" >}}
+
 
 ## Abstract
-© 2020 The Authors.Many scientific and medical researchers are working towards the creation of a virtual human- A personalized digital copy of an individual-that will assist in a patient's diagnosis, treatment and recovery. The complex nature of living systems means that the development of this remains a major challenge. We describe progress in enabling the HemeLB lattice Boltzmann code to simulate 3D macroscopic blood flow on a full human scale. Significant developments in memory management and load balancing allow near linear scaling performance of the code on hundreds of thousands of computer cores. Integral to the construction of a virtual human, we also outline the implementation of a self-coupling strategy for HemeLB. This allows simultaneous simulation of arterial and venous vascular trees based on human-specific geometries.
+Many scientific and medical researchers are working towards the creation of a virtual human- A personalized digital copy of an individual-that will assist in a patient's diagnosis, treatment and recovery. The complex nature of living systems means that the development of this remains a major challenge. We describe progress in enabling the HemeLB lattice Boltzmann code to simulate 3D macroscopic blood flow on a full human scale. Significant developments in memory management and load balancing allow near linear scaling performance of the code on hundreds of thousands of computer cores. Integral to the construction of a virtual human, we also outline the implementation of a self-coupling strategy for HemeLB. This allows simultaneous simulation of arterial and venous vascular trees based on human-specific geometries.

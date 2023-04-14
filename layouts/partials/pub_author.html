@@ -7,6 +7,11 @@
 {{-     $url = .RelPermalink -}}
 {{-   end -}}
 {{- end -}}
+{{- if eq (lower .id) (lower .page.Params.short) -}}
+<b>{{ .name }}</b>
+{{- else -}}
 {{- if $url -}}<a href="{{ $url }}">{{- end -}}
-    {{- if eq (lower .id) (lower .page.Params.short) -}}<b>{{ .name }}</b>{{- else -}}{{ .name }}{{- end -}}
+{{ .name }}
 {{- if $url -}}</a>{{- end -}}
+{{- end -}}
+

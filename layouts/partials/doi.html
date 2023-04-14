@@ -18,9 +18,11 @@
 {{-     $linktext = "DOI" -}}
 {{-   end -}}
 {{- end -}}
-{{- range $key, $value := .article.Params.realauthors -}}
+{{- range $author := .article.Params.realauthors -}}
+{{- range $key, $value := $author -}}
 {{ partial "pub_author.html" (dict "id" $key "name" $value "page" $page "site" $site )}},
 {{ end -}}
+{{- end -}}
 {{ if $url }}<a href="{{ $url }}" aria-label="{{ $article.Title | emojify }}" >{{ end }}
 <i>{{- $article.Title -}}</i>
 {{ if $url }}</a>{{ end }}, {{ $article.Params.journal }}, {{ $article.Params.Date.Year }},

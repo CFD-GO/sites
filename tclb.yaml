@@ -42,6 +42,7 @@ params:
   sites:
     mcf:  https://mcf.tclb.io
     tclb: https://tclb.io
+    za: https://za.tclb.io
 taxonomies:
   author: authors
   tclb: tclb
