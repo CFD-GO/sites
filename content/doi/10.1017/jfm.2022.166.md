@@ -17,11 +17,9 @@ journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
 scopus_cite: 3
 pub_type: Article
-auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
-auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 tclb: publications
 mcf: publications
-redirect: https://doi.org/10.1017/jfm.2022.166     # DELETE THIS TO NOT REDIRECT
+image: img/doi/10.1017/jfm.2022.166/Abstract.jpeg
 realauthors:
 - N Di Vaira: N.J. Di Vaira
 - L Laniewski-Wollk: L. Łaniewski-Wołłk
@@ -30,6 +28,16 @@ realauthors:
 - C Leonardi: C.R. Leonardi
 ---
 
+![Render of plugging of smallest particles](/img/doi/10.1017/jfm.2022.166/Abstract.jpeg)
 
-## Abstract
-The shear-induced migration of dense suspensions with continuously distributed (polydisperse) particle sizes is investigated in planar channel flows for the first time. A coupled lattice Boltzmann-discrete element method numerical framework is employed and validated against benchmark experimental results of bulk shear-induced migration and segregation by particle size. Distinct dependence on the particle size distribution is shown in the flowing (non-plugged) regime (where the bulk solid volume fraction,) resulting from a dual dependence on the particle self-diffusivity and local rheology imposed by the particle pressure gradient. Close agreement between statistically equivalent bidisperse and polydisperse suspensions suggests that the bulk migration, and by extension the shear-induced diffusivity, is completely characterised by the first three statistical moments of the particle size distribution. For both bidisperse and polydisperse suspensions in the plugging regime, the smallest particles preferentially form the plugs, causing the largest particles to segregate to the channel walls. This effect is accentuated as increases and has not been reported in the literature hitherto. It is proposed that smaller particles preferentially form the plugs due to their higher shear-rate fluctuations, which completely dominate particle motion near the plug where the mean shear rate vanishes. Finally, increasing inertia causes a greater bulk migration towards the channel walls, but increased mid-plane migration for the largest particles due to the dependence of the particle self-diffusivity on the particle Reynolds number. As increases shear-induced migration dominates and these inertial effects disappear, as does dependence on the particle size distribution.
+In this work we investigated the phenomenon of shear-induced migration for polydisperse suspensions for the first time. Shear-induced migration is basically the diffusion of particles in the direction of decreasing shear rate, caused by the accumlation of random particle collisions in sheared flows. In channels, it results in the accumulation of particles at the channel centre and a flattening of the velocity profile.  These concepts have long been established and investigated for monodisperse suspensions (all particles of the same size), and some works have even investigated bidisperse suspensions (particles of two different sizes), demonstrating that the larger particles preferentially migrate towards the channel centre.
+
+Our study required us to simulate thousands of particles over large time scales, seeing as the development lengths of shear-induced migration are orders of magnitude longer than pure fluid flows. We achieved this using our group's LBM solver, TCLB, which includes coupling to open-source DEM solvers (so far LIGGGHTS and ESyS-Particle) and MPI capability for HPC GPU clusters. Overall, the publication includes nearly 100 LBM-DEM simulations (pictured below), each conducted on 4 GPU cores for 24 hours. The LBM solid coupling model we used for these simulations - the partially saturated method - comes ready-coded with the installation of TCLB.
+
+This work made two fundamental discoveries. Firstly, when plugging occurs in the channel centre (due to high solid volume fraction) it is the smallest particles which preferentially form the plugs, and this occurs for both bidisperse and polydisperse suspensions. Secondly, the first three statistical moments of a suspension's particle size distribution completely characterise shear-induced migration. In this way, statistically-equivalent bidisperse and polydisperse suspensions exhibit the same migration.
+
+These results could now form the basis for new particle separation microfluidic devices, and improve our understanding of dense suspension flows in unobservable subsurface environments.
+
+![Shear-induced migration test cell](/img/doi/10.1017/jfm.2022.166/Fig16c.png)
+
+
