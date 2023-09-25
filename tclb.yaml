@@ -18,7 +18,7 @@ params:
     - name: About
       url: about/
       home: true
-    - name: Pulications
+    - name: Publications
       url: tclb/publications/
     - name: Download
       url: about/download/
