@@ -170,7 +170,7 @@ ret = lapply(seq_len(nrow(works_tab)), function(k) {
 
 
 ret = lapply(rows(tab), function(x) {
-  fn = paste0("content/people/",sub(" ","-",tolower(x$id)),"/index.md")
+  fn = paste0("content/people/",gsub(" ","-",tolower(x$id)),"/index.md")
   data = list(
     short=x$id,
     title=x$id,
