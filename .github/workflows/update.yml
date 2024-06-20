@@ -31,3 +31,19 @@ jobs:
       env:
         SCOPUS_TOKEN: ${{ secrets.SCOPUS_TOKEN }}
       run: Rscript auto/get.doi.R
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.PAT }}
+        commit-message: Update content
+        committer: L Laniewski-Wollk Bot <llaniewski-bot@users.noreply.github.com>
+        signoff: false
+        branch: updates
+        delete-branch: true
+        title: 'Update content'
+        body: |
+          This is automatic update
+        labels: |
+          update
+          auto
