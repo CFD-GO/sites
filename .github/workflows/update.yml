@@ -28,4 +28,6 @@ jobs:
           any::httr
           any::yaml
     - name: Get DOI
+      env:
+        SCOPUS_TOKEN: ${{ secrets.SCOPUS_TOKEN }}
       run: Rscript auto/get.doi.R
