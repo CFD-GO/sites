@@ -22,15 +22,17 @@ scopus_works = function(author_id) {
   ret = NULL
   url = paste0("https://api.elsevier.com/content/search/scopus?query=AU-ID(",author_id,")")
   data = scopus_json(url)
+  if (as.numeric(data$`opensearch:totalResults`) == 0) return(ret)
   ret = c(ret, data$entry)
   links = scopus_links(data)
   while (! is.null(links$'next')) {
     url = links$'next'
     data = scopus_json(url)
+    if (as.numeric(data$`opensearch:totalResults`) == 0) return(ret)
     ret = c(ret, data$entry)
     links = scopus_links(data)
   }
-  if (length(ret) != as.numeric(data$`opensearch:totalResults`)) stop("Wrong number of results")
+  if (length(ret) != as.numeric(data$`opensearch:totalResults`)) stop("Wrong number of results:", length(ret), "!=",data$`opensearch:totalResults` )
   ret
 }
 

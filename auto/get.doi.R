@@ -5,6 +5,8 @@
 
 rm(list=ls())
 
+dir.create("cache/", recursive = TRUE)
+
 source("auto/lib.R")
 scopus_token = readLines("~/.scopus_token")
 
