@@ -3,6 +3,12 @@ name: Update
 on:
  schedule:
    - cron: '0 12 * * 1'
+ workflow_dispatch:
+   pr:
+     description: "Make a pull request"
+     required: true
+     default: true
+     type: boolean
 
 jobs:
   test:
