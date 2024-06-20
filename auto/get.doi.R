@@ -5,6 +5,8 @@
 
 rm(list=ls())
 
+dir.create("cache/", recursive = TRUE)
+
 source("auto/lib.R")
 scopus_token = readLines("~/.scopus_token")
 
@@ -73,17 +75,19 @@ works_tab$cite = as.numeric(sapply(works_full, function(x) x$coredata$`citedby-c
 plot(seq(0,1,len=length(works_tab$cite)),cumsum(sort(works_tab$cite,dec=TRUE))/sum(works_tab$cite), ylim=c(0,1))
 works_tab[order(works_tab$cite,decreasing = TRUE)[1:20],]
 
-
-
-
+sel = (!is.na(works_tab$doi)) & duplicated(works_tab$doi)
+other_tab = works_tab[sel,,drop=FALSE]
+works_tab = works_tab[!sel,,drop=FALSE]
+works_tab$other_url = lapply(works_tab$doi, function(doi) other_tab$url[which(other_tab$doi == doi)])
 
 tclb_people = tab$id[tab$tclb != "no"]
 mcf_people = tab$id[tab$mcf != "no"]
-works_ids = lapply(works_full, function(x) sapply(x$authors$author,gen_id))
+
+works_ids = lapply(works_full[works_tab$url], function(x) sapply(x$authors$author,gen_id))
 sel = sapply(works_ids, function(x) any(x %in% c(tclb_people,mcf_people)))
 tmp = works_tab
 tmp$authors = sapply(works_ids, paste, collapse=", ")
-tmp$date = sapply(works_full, function(x) x$coredata$`prism:coverDate`)
+tmp$date = sapply(works_full[works_tab$url], function(x) x$coredata$`prism:coverDate`)
 tmp = tmp[sel,]
 sel = !is.na(tmp$doi)
 tmp = tmp[sel,]
@@ -108,8 +112,11 @@ writeLines(l, "auto/cat.txt")
 tclb_pub = tmp$doi[tmp$tclb]
 mcf_pub = tmp$doi[tmp$mcf]
 
-ret = lapply(works_full, function(x) {
-  
+#ret = lapply(works_full, function(x) {
+ret = lapply(seq_len(nrow(works_tab)), function(k) {
+  x = works_full[[ works_tab$url[k] ]]
+  other_url = works_tab$other_url[[k]]
+  pub_type = works_tab$type[k]
   cat(scopus_links(x$coredata)$self, x$coredata$`prism:doi`,"...\n")
   data = list(
     doi=x$coredata$`prism:doi`,
@@ -120,16 +127,17 @@ ret = lapply(works_full, function(x) {
     journal=x$coredata$`prism:publicationName`,
     publisher=x$coredata$`dc:publisher`,
     scopus_cite=as.integer(x$coredata$`citedby-count`),
+    pub_type=pub_type,
     auto_content=TRUE,
     auto_data=TRUE
   )
   
   if (!is.null(data$doi)) {
     if (data$doi %in% tclb_pub) {
-    
+      data$tclb = "publications"
     }
     if (data$doi %in% mcf_pub) {
-      
+      data$mcf = "publications"
     }
   }
     
@@ -162,7 +170,7 @@ ret = lapply(works_full, function(x) {
 
 
 ret = lapply(rows(tab), function(x) {
-  fn = paste0("content/people/",sub(" ","-",tolower(x$id)),"/index.md")
+  fn = paste0("content/people/",gsub(" ","-",tolower(x$id)),"/index.md")
   data = list(
     short=x$id,
     title=x$id,
