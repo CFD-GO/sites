@@ -8,8 +8,14 @@ rm(list=ls())
 dir.create("cache/", recursive = TRUE)
 
 source("auto/lib.R")
-scopus_token = readLines("~/.scopus_token")
+stfile = "~/.scopus_token"
+if (file.exists(stfile)) {
+  scopus_token = readLines(stfile)
+} else {
+  scopus_token = Sys.getenv("SCOPUS_TOKEN")
+}
 
+if (scopus_token == "") stop("No token")
 
 tab=read.csv(na.strings = "NA", stringsAsFactors = FALSE,quote = '"',strip.white = TRUE, textConnection('
 id,                           scopus_id,                  orcid,      tclb,            mcf,       ccfd
