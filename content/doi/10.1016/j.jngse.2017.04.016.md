@@ -15,7 +15,7 @@ keywords:
 date: '2017-01-01'
 journal: Journal of Natural Gas Science and Engineering
 publisher: Elsevier B.V.
-scopus_cite: 34
+scopus_cite: 45
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

@@ -14,7 +14,7 @@ keywords:
 - multiphase flow
 date: '2016-04-01'
 journal: Communications in Computational Physics
-publisher: Global Science Pressinfo@global-sci.org
+publisher: Global Science Press
 scopus_cite: 6
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT

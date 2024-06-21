@@ -15,7 +15,7 @@ keywords:
 date: '2020-09-01'
 journal: Photonics and Nanostructures - Fundamentals and Applications
 publisher: Elsevier B.V.
-scopus_cite: 3
+scopus_cite: 10
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

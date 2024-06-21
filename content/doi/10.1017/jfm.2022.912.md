@@ -12,7 +12,7 @@ keywords:
 date: '2022-12-10'
 journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
-scopus_cite: 0
+scopus_cite: 3
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

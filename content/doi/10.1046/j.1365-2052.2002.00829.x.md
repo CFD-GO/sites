@@ -19,7 +19,7 @@ keywords:
 date: '2002-04-22'
 journal: Animal Genetics
 publisher: ~
-scopus_cite: 83
+scopus_cite: 86
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

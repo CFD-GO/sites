@@ -1,6 +1,7 @@
 ---
 doi: 10.1017/jfm.2023.214
-title: Hydrodynamic clogging of micro-particles in planar channels under electrostatic forces
+title: Hydrodynamic clogging of micro-particles in planar channels under electrostatic
+  forces
 authors:
 - N Di Vaira
 - L Laniewski-Wollk
@@ -16,15 +17,15 @@ journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
 scopus_cite: 1
 pub_type: Article
-tclb: publications
-mcf: publications
-image: img/doi/10.1017/jfm.2023.214/Abstract.jpeg
 realauthors:
 - N Di Vaira: N.J. Di Vaira
 - L Laniewski-Wollk: L. Łaniewski-Wołłk
 - R Johnson: R.L. Johnson
 - S Aminossadati: S.M. Aminossadati
 - C Leonardi: C.R. Leonardi
+tclb: publications
+mcf: publications
+image: img/doi/10.1017/jfm.2023.214/Abstract.jpeg
 ---
 
 ![Flow around an arch](/img/doi/10.1017/jfm.2023.214/Abstract.jpeg)

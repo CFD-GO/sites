@@ -15,7 +15,7 @@ keywords:
 date: '2020-09-01'
 journal: Fuel
 publisher: Elsevier Ltd
-scopus_cite: 20
+scopus_cite: 29
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

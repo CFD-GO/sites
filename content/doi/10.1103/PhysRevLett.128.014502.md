@@ -10,7 +10,7 @@ keywords: []
 date: '2022-01-07'
 journal: Physical Review Letters
 publisher: American Physical Society
-scopus_cite: 10
+scopus_cite: 18
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
