@@ -9,7 +9,9 @@ scopus_url = function(url, ...) {
 
 scopus_json = function(url, ...) {
   ret = httr::GET(scopus_url(url, ...), httr::accept_json())
-  httr::content(ret)[[1]]
+  cont = httr::content(ret)[[1]]
+  attr(cont,"headers") = ret$headers
+  cont
 }
 
 scopus_links = function(data) {
