@@ -14,7 +14,7 @@ keywords:
 date: '2022-10-01'
 journal: Fuel
 publisher: Elsevier Ltd
-scopus_cite: 1
+scopus_cite: 9
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

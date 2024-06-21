@@ -2,7 +2,7 @@
 doi: 10.1017/jfm.2022.805
 title: Slowing down convective instabilities in corrugated Couette–Poiseuille flow
 authors:
-- Nikesh
+- N Yadav
 - S Gepner
 keywords:
 - absolute/convection instability
@@ -10,13 +10,13 @@ keywords:
 date: '2022-11-10'
 journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
-scopus_cite: 0
+scopus_cite: 1
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1017/jfm.2022.805     # DELETE THIS TO NOT REDIRECT
 realauthors:
-- Nikesh: N. Yadav
+- N Yadav: N. Yadav
 - S Gepner: S.W. Gepner
 ---
 

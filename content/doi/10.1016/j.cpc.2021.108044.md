@@ -12,7 +12,7 @@ keywords:
 date: '2021-10-01'
 journal: Computer Physics Communications
 publisher: Elsevier B.V.
-scopus_cite: 2
+scopus_cite: 5
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

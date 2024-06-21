@@ -14,7 +14,7 @@ keywords:
 date: '2016-12-01'
 journal: International Journal of Heat and Fluid Flow
 publisher: Elsevier B.V.
-scopus_cite: 15
+scopus_cite: 17
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

@@ -14,7 +14,7 @@ keywords:
 date: '2011-01-01'
 journal: Progress in Computational Fluid Dynamics
 publisher: Inderscience Publishers
-scopus_cite: 1
+scopus_cite: 2
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

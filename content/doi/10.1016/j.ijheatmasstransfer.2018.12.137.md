@@ -12,7 +12,7 @@ keywords:
 date: '2019-04-01'
 journal: International Journal of Heat and Mass Transfer
 publisher: Elsevier Ltd
-scopus_cite: 1
+scopus_cite: 2
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

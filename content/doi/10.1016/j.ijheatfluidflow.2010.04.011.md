@@ -12,7 +12,7 @@ keywords:
 date: '2010-10-01'
 journal: International Journal of Heat and Fluid Flow
 publisher: ~
-scopus_cite: 58
+scopus_cite: 65
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

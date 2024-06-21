@@ -15,7 +15,7 @@ keywords:
 date: '2011-07-01'
 journal: Journal of Non-Newtonian Fluid Mechanics
 publisher: ~
-scopus_cite: 25
+scopus_cite: 28
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

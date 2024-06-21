@@ -10,7 +10,7 @@ keywords:
 date: '2017-10-25'
 journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
-scopus_cite: 16
+scopus_cite: 21
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

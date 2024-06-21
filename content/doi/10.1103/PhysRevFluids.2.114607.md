@@ -9,7 +9,7 @@ keywords: []
 date: '2017-11-01'
 journal: Physical Review Fluids
 publisher: American Physical Societyrevtex@aps.org
-scopus_cite: 9
+scopus_cite: 15
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
