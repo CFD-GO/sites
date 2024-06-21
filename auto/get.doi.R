@@ -73,8 +73,9 @@ if (file.exists(fn)) load(fn)
 sel = setdiff(works_tab$url, names(works_full))
 works_full[sel] = lapply(sel, function(url) {
   print(url)
-  ret = scopus_json(url)
+  ret = scopus_json(paste0(url,"?view=FULL"))
   if (! "authors" %in% names(ret)) stop("'authors' not in json")
+  ret
 })
 save(works_full, file=fn)
 
