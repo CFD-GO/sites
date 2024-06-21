@@ -20,7 +20,7 @@ keywords:
 date: '2021-12-15'
 journal: Applied Acoustics
 publisher: Elsevier Ltd
-scopus_cite: 0
+scopus_cite: 2
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

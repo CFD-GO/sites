@@ -14,7 +14,7 @@ keywords:
 date: '2016-06-01'
 journal: Computers and Geosciences
 publisher: Elsevier Ltd
-scopus_cite: 12
+scopus_cite: 15
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

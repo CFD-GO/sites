@@ -17,7 +17,7 @@ keywords:
 date: '2020-04-01'
 journal: International Journal of Rock Mechanics and Mining Sciences
 publisher: Elsevier Ltd
-scopus_cite: 13
+scopus_cite: 18
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

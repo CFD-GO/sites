@@ -5,8 +5,7 @@ tclb:
 - people
 - user
 - contr
-mcf:
-- people
+mcf: people
 scopus: '57215219080'
 orcid: 0000-0002-1302-4859
 feature: thumbnail.jpeg

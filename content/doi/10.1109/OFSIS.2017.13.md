@@ -19,6 +19,7 @@ scopus_cite: 2
 pub_type: Conference Paper
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1109/OFSIS.2017.13    # DELETE THIS TO NOT REDIRECT
 realauthors:
 - B Masum: B.M. Masum

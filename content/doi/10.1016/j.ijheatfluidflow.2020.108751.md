@@ -3,7 +3,7 @@ doi: 10.1016/j.ijheatfluidflow.2020.108751
 title: Determination of groove shape with strong destabilization and low hydraulic
   drag
 authors:
-- Nikesh
+- N Yadav
 - S Gepner
 - J Szumbarski
 keywords:
@@ -14,13 +14,13 @@ keywords:
 date: '2021-02-01'
 journal: International Journal of Heat and Fluid Flow
 publisher: Elsevier B.V.
-scopus_cite: 6
+scopus_cite: 8
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
 redirect: https://doi.org/10.1016/j.ijheatfluidflow.2020.108751 # DELETE THIS TO NOT REDIRECT
 realauthors:
-- Nikesh: N. Yadav
+- N Yadav: N. Yadav
 - S Gepner: S.W. Gepner
 - J Szumbarski: J. Szumbarski
 ---

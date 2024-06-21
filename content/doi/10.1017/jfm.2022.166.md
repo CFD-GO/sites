@@ -19,13 +19,13 @@ scopus_cite: 3
 pub_type: Article
 tclb: publications
 mcf: publications
-image: img/doi/10.1017/jfm.2022.166/Abstract.jpeg
 realauthors:
 - N Di Vaira: N.J. Di Vaira
 - L Laniewski-Wollk: L. Łaniewski-Wołłk
 - R Johnson: R.L. Johnson
 - S Aminossadati: S.M. Aminossadati
 - C Leonardi: C.R. Leonardi
+image: img/doi/10.1017/jfm.2022.166/Abstract.jpeg
 ---
 
 ![Render of plugging of smallest particles](/img/doi/10.1017/jfm.2022.166/Abstract.jpeg)
