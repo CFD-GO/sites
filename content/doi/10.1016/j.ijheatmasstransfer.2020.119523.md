@@ -25,6 +25,8 @@ realauthors:
 - S Gepner: S.W. Gepner
 - N Yadav: N. Yadav
 - J Szumbarski: J. Szumbarski
+image: /img/doi/10.1016/j.ijheatmasstransfer.2020.119523/firstpage.png
+showonlyimage: yes
 ---
 
 

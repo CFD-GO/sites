@@ -29,6 +29,8 @@ realauthors:
 - E Upchurch: E.R. Upchurch
 - E Ozbayoglu: E.M. Ozbayoglu
 - S Baldino: S. Baldino
+image: /img/doi/10.1016/j.ijmultiphaseflow.2023.104626/firstpage.png
+showonlyimage: yes
 ---
 
 

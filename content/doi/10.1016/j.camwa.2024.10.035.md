@@ -29,6 +29,8 @@ realauthors:
 - L Laniewski-Wollk: Ł. Łaniewski-Wołłk
 - S Aminossadati: S.M. Aminossadati
 - C Leonardi: C.R. Leonardi
+image: /img/doi/10.1016/j.camwa.2024.10.035/firstpage.png
+showonlyimage: yes
 ---
 
 

@@ -32,6 +32,8 @@ realauthors:
 - L Lee: L.C. Lee
 - B Ray: B. Ray
 - C Leonardi: C.R. Leonardi
+image: /img/doi/10.1016/j.compbiomed.2024.109019/firstpage.png
+showonlyimage: yes
 ---
 
 

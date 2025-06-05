@@ -32,6 +32,8 @@ realauthors:
 - T Mitchell: T.R. Mitchell
 - I Onederra: I.A. Onederra
 - C Leonardi: C.R. Leonardi
+image: /img/doi/10.1016/j.mineng.2023.108027/firstpage.png
+showonlyimage: yes
 ---
 
 

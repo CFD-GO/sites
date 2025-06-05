@@ -34,6 +34,8 @@ realauthors:
 - B Li: B. Li
 - M Lu: M. Lu
 - Z Pan: Z. Pan
+image: /img/doi/10.1016/j.jgsce.2025.205563/firstpage.png
+showonlyimage: yes
 ---
 
 

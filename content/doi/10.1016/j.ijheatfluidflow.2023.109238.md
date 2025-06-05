@@ -31,6 +31,8 @@ realauthors:
 - V Sokolenko: V. Sokolenko
 - W Elsner: W. Elsner
 - S Kubacki: S. Kubacki
+image: /img/doi/10.1016/j.ijheatfluidflow.2023.109238/firstpage.png
+showonlyimage: yes
 ---
 
 

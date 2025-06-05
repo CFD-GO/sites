@@ -20,6 +20,8 @@ redirect: https://doi.org/10.1016/j.procs.2010.04.301 # DELETE THIS TO NOT REDIR
 realauthors:
 - S Gepner: S. Gepner
 - J Rokicki: J. Rokicki
+image: /img/doi/10.1016/j.procs.2010.04.301/firstpage.png
+showonlyimage: yes
 ---
 
 

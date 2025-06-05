@@ -16,6 +16,8 @@ redirect: https://doi.org/10.1006/jcph.1999.6282   # DELETE THIS TO NOT REDIRECT
 realauthors:
 - J Szumbarski: J. Szumbarski
 - J Floryan: J.M. Floryan
+image: /img/doi/10.1006/jcph.1999.6282/firstpage.png
+showonlyimage: yes
 ---
 
 

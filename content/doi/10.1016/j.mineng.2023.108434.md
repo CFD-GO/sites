@@ -25,6 +25,8 @@ realauthors:
 - T Mitchell: T. Mitchel
 - C Leonardi: C. Leonardi
 - I Onederra: I. Onederra
+image: /img/doi/10.1016/j.mineng.2023.108434/firstpage.png
+showonlyimage: yes
 ---
 
 

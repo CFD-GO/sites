@@ -24,6 +24,8 @@ realauthors:
 - G Gruszczynski: G. Gruszczyński
 - M Dzikowski: M. Dzikowski
 - L Laniewski-Wollk: Ł. Łaniewski-Wołłk
+image: /img/doi/10.1016/j.camwa.2023.05.020/firstpage.png
+showonlyimage: yes
 ---
 
 

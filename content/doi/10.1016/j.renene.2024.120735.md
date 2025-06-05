@@ -25,6 +25,8 @@ realauthors:
 - J Mojumder: J.C. Mojumder
 - S Aminossadati: S.M. Aminossadati
 - C Leonardi: C.R. Leonardi
+image: /img/doi/10.1016/j.renene.2024.120735/firstpage.png
+showonlyimage: yes
 ---
 
 

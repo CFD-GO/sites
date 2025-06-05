@@ -26,6 +26,8 @@ realauthors:
 - S Sadeghi: S. Sadeghi
 - S Aminossadati: S.M. Aminossadati
 - C Leonardi: C. Leonardi
+image: /img/doi/10.1016/j.euromechflu.2024.12.002/firstpage.png
+showonlyimage: yes
 ---
 
 

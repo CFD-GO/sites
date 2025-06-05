@@ -23,6 +23,8 @@ realauthors:
 - S Husain: S.Z. Husain
 - J Floryan: J.M. Floryan
 - J Szumbarski: J. Szumbarski
+image: /img/doi/10.1016/j.cma.2009.09.022/firstpage.png
+showonlyimage: yes
 ---
 
 
