@@ -24,6 +24,8 @@ redirect: https://doi.org/10.1016/j.ijheatfluidflow.2023.109206 # DELETE THIS TO
 realauthors:
 - S Kubacki: S. Kubacki
 - E Dick: E. Dick
+image: /img/doi/10.1016/j.ijheatfluidflow.2023.109206/firstpage.png
+showonlyimage: yes
 ---
 
 

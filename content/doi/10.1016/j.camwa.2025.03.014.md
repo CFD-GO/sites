@@ -30,6 +30,8 @@ realauthors:
 - T Mitchell: T.R. Mitchell
 - L Laniewski-Wollk: Ł. Łaniewski-Wołłk
 - C Leonardi: C.R. Leonardi
+image: /img/doi/10.1016/j.camwa.2025.03.014/firstpage.png
+showonlyimage: yes
 ---
 
 

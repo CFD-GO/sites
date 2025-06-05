@@ -25,6 +25,8 @@ realauthors:
 - S Kubacki: S. Kubacki
 - P Jonak: P. Jonak
 - E Dick: E. Dick
+image: /img/doi/10.1016/j.ijheatfluidflow.2019.03.007/firstpage.png
+showonlyimage: yes
 ---
 
 

@@ -23,6 +23,8 @@ redirect: https://doi.org/10.1016/j.camwa.2021.12.004 # DELETE THIS TO NOT REDIR
 realauthors:
 - J Galecki: J. Gałecki
 - J Szumbarski: J. Szumbarski
+image: /img/doi/10.1016/j.camwa.2021.12.004/firstpage.png
+showonlyimage: yes
 ---
 
 

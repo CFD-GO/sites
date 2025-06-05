@@ -24,6 +24,8 @@ realauthors:
 - K Kurec: K. Kurec
 - J Piechna: J. Piechna
 - K Gumowski: K. Gumowski
+image: /img/doi/10.1016/j.applthermaleng.2016.10.142/firstpage.png
+showonlyimage: yes
 ---
 
 

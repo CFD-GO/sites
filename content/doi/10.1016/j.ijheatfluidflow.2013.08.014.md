@@ -23,6 +23,8 @@ realauthors:
 - S Kubacki: S. Kubacki
 - J Rokicki: J. Rokicki
 - E Dick: E. Dick
+image: /img/doi/10.1016/j.ijheatfluidflow.2013.08.014/firstpage.png
+showonlyimage: yes
 ---
 
 

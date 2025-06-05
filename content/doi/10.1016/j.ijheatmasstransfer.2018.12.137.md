@@ -21,6 +21,8 @@ realauthors:
 - M Klamka: M. Klamka
 - M Remer: M. Remer
 - T Bobinski: T. Bobinski
+image: /img/doi/10.1016/j.ijheatmasstransfer.2018.12.137/firstpage.png
+showonlyimage: yes
 ---
 
 

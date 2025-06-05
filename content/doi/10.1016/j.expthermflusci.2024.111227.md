@@ -28,6 +28,8 @@ realauthors:
 - Z Rarata: Z. Rarata
 - S Kubacki: S. Kubacki
 - W Elsner: W. Elsner
+image: /img/doi/10.1016/j.expthermflusci.2024.111227/firstpage.png
+showonlyimage: yes
 ---
 
 

@@ -28,6 +28,8 @@ realauthors:
 - R Wang: R. Wang
 - B Li: B. Li
 - Z Pan: Z. Pan
+image: /img/doi/10.1016/j.jrmge.2023.11.008/firstpage.png
+showonlyimage: yes
 ---
 
 

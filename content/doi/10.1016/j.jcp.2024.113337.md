@@ -27,6 +27,8 @@ realauthors:
 - T Mitchell: T.R. Mitchell
 - C Leonardi: C.R. Leonardi
 - U Rude: U. Rüde
+image: /img/doi/10.1016/j.jcp.2024.113337/firstpage.png
+showonlyimage: yes
 ---
 
 

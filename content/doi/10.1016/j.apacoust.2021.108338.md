@@ -35,6 +35,8 @@ realauthors:
 - T Kowalski: T. Kowalski
 - A Sikorski: A. Sikorski
 - J Baran: J. Baran
+image: /img/doi/10.1016/j.apacoust.2021.108338/firstpage.png
+showonlyimage: yes
 ---
 
 

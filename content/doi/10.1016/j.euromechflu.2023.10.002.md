@@ -25,6 +25,8 @@ realauthors:
 - B Olszanski: B. Olszański
 - K Gumowski: K. Gumowski
 - S Kubacki: S. Kubacki
+image: /img/doi/10.1016/j.euromechflu.2023.10.002/firstpage.png
+showonlyimage: yes
 ---
 
 

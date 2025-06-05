@@ -31,6 +31,8 @@ realauthors:
 - S Kubacki: S. Kubacki
 - E Dick: E. Dick
 - H Terryn: H. Terryn
+image: /img/doi/10.1016/j.corsci.2008.12.001/firstpage.png
+showonlyimage: yes
 ---
 
 

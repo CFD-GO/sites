@@ -28,6 +28,8 @@ realauthors:
 - M Araos: M. Araos
 - C Leonardi: C. Leonardi
 - I Onederra: I. Onederra
+image: /img/doi/10.1016/j.mineng.2023.108142/firstpage.png
+showonlyimage: yes
 ---
 
 

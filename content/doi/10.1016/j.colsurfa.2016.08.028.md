@@ -34,6 +34,8 @@ realauthors:
 - M Kaliush: M. Kaliush
 - D Pawlak: D. Pawlak
 - G Celichowski: G. Celichowski
+image: /img/doi/10.1016/j.colsurfa.2016.08.028/firstpage.png
+showonlyimage: yes
 ---
 
 

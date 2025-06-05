@@ -29,6 +29,8 @@ realauthors:
 - S Aminossadati: S.M. Aminossadati
 - M Kizil: M. Kizil
 - C Leonardi: C. Leonardi
+image: /img/doi/10.1016/j.tust.2025.106500/firstpage.png
+showonlyimage: yes
 ---
 
 

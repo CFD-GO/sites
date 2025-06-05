@@ -24,6 +24,8 @@ realauthors:
 - J Skibinski: J. Skibinski
 - J Szumbarski: J. Szumbarski
 - K Kurzydlowski: K.J. Kurzydlowski
+image: /img/doi/10.1016/j.commatsci.2012.08.046/firstpage.png
+showonlyimage: yes
 ---
 
 

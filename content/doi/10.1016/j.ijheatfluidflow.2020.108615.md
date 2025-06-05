@@ -24,6 +24,8 @@ realauthors:
 - D Simoni: D. Simoni
 - S Kubacki: S. Kubacki
 - E Dick: E. Dick
+image: /img/doi/10.1016/j.ijheatfluidflow.2020.108615/firstpage.png
+showonlyimage: yes
 ---
 
 

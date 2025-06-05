@@ -27,6 +27,8 @@ realauthors:
 - D Lengani: D. Lengani
 - M Dellacasagrande: M. Dellacasagrande
 - E Dick: E. Dick
+image: /img/doi/10.1016/j.ijheatfluidflow.2021.108860/firstpage.png
+showonlyimage: yes
 ---
 
 

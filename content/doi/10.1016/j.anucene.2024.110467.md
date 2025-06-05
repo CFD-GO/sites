@@ -22,6 +22,8 @@ redirect: https://doi.org/10.1016/j.anucene.2024.110467 # DELETE THIS TO NOT RED
 realauthors:
 - P Prusinski: P. Prusiński
 - S Kubacki: S. Kubacki
+image: /img/doi/10.1016/j.anucene.2024.110467/firstpage.png
+showonlyimage: yes
 ---
 
 

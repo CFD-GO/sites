@@ -23,6 +23,8 @@ realauthors:
 - N Yadav: N. Yadav
 - S Gepner: S.W. Gepner
 - J Szumbarski: J. Szumbarski
+image: /img/doi/10.1016/j.ijheatfluidflow.2020.108751/firstpage.png
+showonlyimage: yes
 ---
 
 

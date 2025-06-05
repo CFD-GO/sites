@@ -27,6 +27,8 @@ realauthors:
 - J Marczak: J. Marczak
 - K Gumowski: K. Gumowski
 - G Sobieraj: G.B. Sobieraj
+image: /img/doi/10.1016/j.surfcoat.2013.03.017/firstpage.png
+showonlyimage: yes
 ---
 
 

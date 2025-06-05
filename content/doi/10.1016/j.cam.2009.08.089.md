@@ -20,6 +20,8 @@ redirect: https://doi.org/10.1016/j.cam.2009.08.089 # DELETE THIS TO NOT REDIREC
 realauthors:
 - S Kubacki: S. Kubacki
 - E Dick: E. Dick
+image: /img/doi/10.1016/j.cam.2009.08.089/firstpage.png
+showonlyimage: yes
 ---
 
 

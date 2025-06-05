@@ -23,6 +23,8 @@ realauthors:
 - J Piechna: J. Piechna
 - K Kamieniecki: K. Kamieniecki
 - J Szumbarski: J. Szumbarski
+image: /img/doi/10.1016/j.oceaneng.2024.119047/firstpage.png
+showonlyimage: yes
 ---
 
 

@@ -26,6 +26,8 @@ realauthors:
 - M Dellacasagrande: M. Dellacasagrande
 - S Kubacki: S. Kubacki
 - E Dick: E. Dick
+image: /img/doi/10.1016/j.ijheatfluidflow.2019.02.008/firstpage.png
+showonlyimage: yes
 ---
 
 
