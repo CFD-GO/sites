@@ -15,7 +15,7 @@ keywords:
 date: '2011-07-08'
 journal: International Journal for Numerical Methods in Engineering
 publisher: ~
-scopus_cite: 145
+scopus_cite: 155
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

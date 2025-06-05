@@ -14,10 +14,11 @@ keywords:
 date: '2023-08-15'
 journal: Computers and Mathematics with Applications
 publisher: Elsevier Ltd
-scopus_cite: 1
+scopus_cite: 2
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+tclb: publications
 redirect: https://doi.org/10.1016/j.camwa.2023.05.020 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - G Gruszczynski: G. Gruszczyński

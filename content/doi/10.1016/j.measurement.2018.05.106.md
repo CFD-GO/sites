@@ -17,7 +17,7 @@ keywords:
 date: '2018-10-01'
 journal: 'Measurement: Journal of the International Measurement Confederation'
 publisher: Elsevier B.V.
-scopus_cite: 7
+scopus_cite: 12
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

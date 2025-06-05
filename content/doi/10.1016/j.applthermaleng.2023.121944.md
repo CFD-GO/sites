@@ -16,10 +16,11 @@ keywords:
 date: '2024-02-15'
 journal: Applied Thermal Engineering
 publisher: Elsevier Ltd
-scopus_cite: 2
+scopus_cite: 5
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.applthermaleng.2023.121944 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - J Mojumder: J.C. Mojumder

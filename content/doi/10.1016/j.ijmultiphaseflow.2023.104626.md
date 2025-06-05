@@ -17,10 +17,11 @@ keywords:
 date: '2024-01-01'
 journal: International Journal of Multiphase Flow
 publisher: Elsevier Ltd
-scopus_cite: 7
+scopus_cite: 15
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.ijmultiphaseflow.2023.104626 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - Y Liu: Y. Liu

@@ -1,3 +1,6 @@
+require(httr)
+require(stringi)
+require(yaml)
 
 scopus_url = function(url, ...) {
   args = list(...)

@@ -14,7 +14,7 @@ keywords:
 date: '2009-12-01'
 journal: Computer Methods in Applied Mechanics and Engineering
 publisher: ~
-scopus_cite: 34
+scopus_cite: 36
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

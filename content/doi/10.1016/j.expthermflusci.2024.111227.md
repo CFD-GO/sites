@@ -17,7 +17,7 @@ keywords:
 date: '2024-08-01'
 journal: Experimental Thermal and Fluid Science
 publisher: Elsevier Inc.
-scopus_cite: 0
+scopus_cite: 1
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

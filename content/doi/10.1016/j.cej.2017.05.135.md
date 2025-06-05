@@ -21,7 +21,7 @@ keywords:
 date: '2017-01-01'
 journal: Chemical Engineering Journal
 publisher: Elsevier B.V.
-scopus_cite: 130
+scopus_cite: 153
 pub_type: Review
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

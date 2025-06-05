@@ -19,7 +19,7 @@ keywords:
 date: '2015-12-01'
 journal: Chemical Engineering Science
 publisher: Elsevier Ltd
-scopus_cite: 44
+scopus_cite: 46
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

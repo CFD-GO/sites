@@ -8,7 +8,7 @@ keywords: instability control
 date: '2023-09-29'
 journal: Journal of Fluid Mechanics
 publisher: Cambridge University Press
-scopus_cite: 2
+scopus_cite: 4
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

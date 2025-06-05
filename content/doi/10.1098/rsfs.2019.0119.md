@@ -26,7 +26,7 @@ keywords:
 date: '2021-02-06'
 journal: Interface Focus
 publisher: Royal Society Publishing
-scopus_cite: 11
+scopus_cite: 17
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

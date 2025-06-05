@@ -15,7 +15,7 @@ date: '2020-07-01'
 journal: Journal of Aerospace Engineering
 publisher: American Society of Civil Engineers (ASCE)1801 Alexander Bell DriveGEORestonAlabamaVA
   20191onlinejls@asce.org
-scopus_cite: 7
+scopus_cite: 8
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

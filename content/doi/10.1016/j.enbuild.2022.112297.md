@@ -16,7 +16,7 @@ keywords:
 date: '2022-09-15'
 journal: Energy and Buildings
 publisher: Elsevier Ltd
-scopus_cite: 5
+scopus_cite: 7
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

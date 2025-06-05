@@ -13,7 +13,7 @@ keywords:
 date: '2021-08-01'
 journal: International Journal for Numerical Methods in Biomedical Engineering
 publisher: John Wiley and Sons Inc
-scopus_cite: 4
+scopus_cite: 6
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
