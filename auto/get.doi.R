@@ -109,7 +109,7 @@ if (file.exists("auto/cat.txt")) {
   names(ret) = c("doi","mcf","tclb")
   ret$mcf = ret$mcf != "_"
   ret$tclb = ret$tclb != "_"
-  tmp = merge(tmp, ret, by= "doi")
+  tmp = merge(tmp, ret, by= "doi",all.x=TRUE)
   tmp$tclb[is.na(tmp$tclb)] = FALSE
   tmp$mcf[is.na(tmp$mcf)] = FALSE
 } else {
