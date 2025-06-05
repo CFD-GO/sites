@@ -11,7 +11,7 @@ keywords: []
 date: '2008-05-30'
 journal: Physical Review E - Statistical, Nonlinear, and Soft Matter Physics
 publisher: ~
-scopus_cite: 41
+scopus_cite: 44
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

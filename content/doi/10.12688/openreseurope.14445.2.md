@@ -32,7 +32,7 @@ keywords:
 date: '2022-01-01'
 journal: Open Research Europe
 publisher: F1000 Research Ltd
-scopus_cite: 19
+scopus_cite: 52
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

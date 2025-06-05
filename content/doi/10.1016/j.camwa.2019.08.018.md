@@ -18,7 +18,7 @@ keywords:
 date: '2020-02-15'
 journal: Computers and Mathematics with Applications
 publisher: Elsevier Ltd
-scopus_cite: 25
+scopus_cite: 30
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

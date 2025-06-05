@@ -20,7 +20,7 @@ keywords:
 date: '2022-10-01'
 journal: Minerals Engineering
 publisher: Elsevier Ltd
-scopus_cite: 11
+scopus_cite: 22
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

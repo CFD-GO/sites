@@ -19,10 +19,11 @@ keywords:
 date: '2023-04-01'
 journal: Minerals Engineering
 publisher: Elsevier Ltd
-scopus_cite: 5
+scopus_cite: 12
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+mcf: publications
 redirect: https://doi.org/10.1016/j.mineng.2023.108027 # DELETE THIS TO NOT REDIRECT
 realauthors:
 - A Roslin: A. Roslin

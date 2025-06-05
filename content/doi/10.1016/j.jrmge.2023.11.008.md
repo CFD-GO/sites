@@ -14,10 +14,10 @@ keywords:
 - numerical simulation
 - particulate flow
 - proppant flowback
-date: '2024-01-01'
+date: '2024-06-01'
 journal: Journal of Rock Mechanics and Geotechnical Engineering
 publisher: Chinese Academy of Sciences
-scopus_cite: 2
+scopus_cite: 8
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

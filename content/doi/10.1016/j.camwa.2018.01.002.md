@@ -15,7 +15,7 @@ keywords:
 date: '2018-04-01'
 journal: Computers and Mathematics with Applications
 publisher: Elsevier Ltd
-scopus_cite: 28
+scopus_cite: 32
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

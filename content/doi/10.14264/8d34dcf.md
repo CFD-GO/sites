@@ -20,6 +20,8 @@ scopus_cite: 2
 pub_type: Conference Paper
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
+tclb: publications
+mcf: publications
 redirect: https://doi.org/10.14264/8d34dcf         # DELETE THIS TO NOT REDIRECT
 realauthors:
 - N Di Vaira: N.J. Di Vaira

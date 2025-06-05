@@ -21,7 +21,7 @@ keywords:
 date: '2023-03-01'
 journal: Aerospace
 publisher: MDPI
-scopus_cite: 2
+scopus_cite: 3
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

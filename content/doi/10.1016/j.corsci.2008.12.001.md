@@ -18,7 +18,7 @@ keywords:
 date: '2009-07-01'
 journal: Corrosion Science
 publisher: ~
-scopus_cite: 17
+scopus_cite: 18
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

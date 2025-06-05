@@ -16,7 +16,7 @@ keywords:
 date: '2013-06-25'
 journal: Surface and Coatings Technology
 publisher: ~
-scopus_cite: 32
+scopus_cite: 33
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
