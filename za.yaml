@@ -3,7 +3,7 @@ theme:
   - congo
 defaultContentLanguage: en
 enableRobotsTXT: true
-paginate: 15
+pagination.pagerSize: 15
 summaryLength: 0
 outputs:
   home:
@@ -13,7 +13,7 @@ outputs:
 
 title: "Zakład Aerodynamiki"
 description: 'Division of Aerodynamics at Warsaw University of Technology'
-copyright: '&copy; 2023 MCF'
+copyright: '&copy; 2023 Zakład Aerodynamiki PW'
 dateFormat: 2 January 2006
 menus:
   main:
