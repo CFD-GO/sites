@@ -16,7 +16,7 @@ keywords:
 date: '2020-01-01'
 journal: 22nd Australasian Fluid Mechanics Conference, AFMC 2020
 publisher: Australasian Fluid Mechanics Society
-scopus_cite: 2
+scopus_cite: 3
 pub_type: Conference Paper
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
