@@ -22,6 +22,8 @@ realauthors:
 - L Klotz: L. Klotz
 - K Bukowski: K. Bukowski
 - K Gumowski: K. Gumowski
+image: /img/doi/10.1017/jfm.2024.639/firstpage.png
+showonlyimage: yes
 ---
 
 

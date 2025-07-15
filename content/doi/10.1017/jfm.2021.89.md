@@ -26,6 +26,8 @@ realauthors:
 - R Godoy-Diana: R. Godoy-Diana
 - J Wesfreid: J.E. Wesfreid
 - T Mullin: T. Mullin
+image: /img/doi/10.1017/jfm.2021.89/firstpage.png
+showonlyimage: yes
 ---
 
 

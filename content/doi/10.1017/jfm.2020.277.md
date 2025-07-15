@@ -24,6 +24,8 @@ realauthors:
 - E Bodenschatz: E. Bodenschatz
 - J Dawson: J.R. Dawson
 - N Worth: N.A. Worth
+image: /img/doi/10.1017/jfm.2020.277/firstpage.png
+showonlyimage: yes
 ---
 
 

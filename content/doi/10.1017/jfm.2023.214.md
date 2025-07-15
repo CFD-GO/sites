@@ -26,6 +26,7 @@ realauthors:
 - S Aminossadati: S.M. Aminossadati
 - C Leonardi: C.R. Leonardi
 image: img/doi/10.1017/jfm.2023.214/Abstract.jpeg
+showonlyimage: yes
 ---
 
 ![Flow around an arch](/img/doi/10.1017/jfm.2023.214/Abstract.jpeg)

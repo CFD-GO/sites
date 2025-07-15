@@ -23,6 +23,8 @@ realauthors:
 - I Frontczak: I. Frontczak
 - L Tuckerman: L.S. Tuckerman
 - J Wesfreid: J.E. Wesfreid
+image: /img/doi/10.1103/PhysRevFluids.2.043904/firstpage.png
+showonlyimage: yes
 ---
 
 
