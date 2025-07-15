@@ -14,7 +14,7 @@ keywords:
 date: '2013-02-01'
 journal: Computational Materials Science
 publisher: ~
-scopus_cite: 94
+scopus_cite: 96
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

@@ -17,7 +17,7 @@ keywords:
 date: '2024-04-10'
 journal: Journal of the Royal Society Interface
 publisher: Royal Society Publishing
-scopus_cite: 0
+scopus_cite: 1
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

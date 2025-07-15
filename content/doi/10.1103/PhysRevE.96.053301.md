@@ -11,7 +11,7 @@ keywords: []
 date: '2017-11-01'
 journal: Physical Review E
 publisher: American Physical Societyrevtex@aps.org
-scopus_cite: 164
+scopus_cite: 168
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA

@@ -16,7 +16,7 @@ keywords:
 date: '2024-12-15'
 journal: Computers and Mathematics with Applications
 publisher: Elsevier Ltd
-scopus_cite: 0
+scopus_cite: 2
 pub_type: Article
 auto_content: yes                                  # DELETE THIS TO NOT AUTO GENERATE CONTENT
 auto_data: yes                                     # DELETE THIS TO NOT AUTO GENERATE METADATA
