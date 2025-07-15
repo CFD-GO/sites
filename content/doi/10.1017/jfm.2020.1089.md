@@ -19,6 +19,8 @@ realauthors:
 - L Klotz: L. Klotz
 - A Pavlenko: A.M. Pavlenko
 - J Wesfreid: J.E. Wesfreid
+image: /img/doi/10.1017/jfm.2020.1089/firstpage.png
+showonlyimage: yes
 ---
 
 

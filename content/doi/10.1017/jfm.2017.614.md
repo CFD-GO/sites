@@ -18,6 +18,8 @@ redirect: https://doi.org/10.1017/jfm.2017.614     # DELETE THIS TO NOT REDIRECT
 realauthors:
 - L Klotz: L. Klotz
 - J Wesfreid: J.E. Wesfreid
+image: /img/doi/10.1017/jfm.2017.614/firstpage.png
+showonlyimage: yes
 ---
 
 

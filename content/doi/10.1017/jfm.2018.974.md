@@ -21,6 +21,8 @@ realauthors:
 - L Klotz: L. Klotz
 - K Gumowski: K. Gumowski
 - J Wesfreid: J.E. Wesfreid
+image: /img/doi/10.1017/jfm.2018.974/firstpage.png
+showonlyimage: yes
 ---
 
 

@@ -21,6 +21,8 @@ realauthors:
 - P Baj: P. Baj
 - F Alves Portela: F. Alves Portela
 - D Carter: D.W. Carter
+image: /img/doi/10.1017/jfm.2022.912/firstpage.png
+showonlyimage: yes
 ---
 
 

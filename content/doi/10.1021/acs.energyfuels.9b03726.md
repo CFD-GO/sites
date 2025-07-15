@@ -19,6 +19,8 @@ realauthors:
 - A Roslin: A. Roslin
 - D Pokrajac: D. Pokrajac
 - Y Zhou: Y. Zhou
+image: /img/doi/10.1021/acs.energyfuels.9b03726/firstpage.png
+showonlyimage: yes
 ---
 
 

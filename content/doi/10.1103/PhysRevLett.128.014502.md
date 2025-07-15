@@ -20,6 +20,8 @@ realauthors:
 - G Lemoult: G. Lemoult
 - K Avila: K. Avila
 - B Hof: B. Hof
+image: /img/doi/10.1103/PhysRevLett.128.014502/firstpage.png
+showonlyimage: yes
 ---
 
 

@@ -26,6 +26,7 @@ realauthors:
 - S Aminossadati: S.M. Aminossadati
 - C Leonardi: C.R. Leonardi
 image: img/doi/10.1017/jfm.2022.166/Abstract.jpeg
+showonlyimage: yes
 ---
 
 ![Render of plugging of smallest particles](/img/doi/10.1017/jfm.2022.166/Abstract.jpeg)

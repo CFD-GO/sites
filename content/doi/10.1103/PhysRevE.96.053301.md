@@ -22,6 +22,8 @@ realauthors:
 - T Mitchell: T. Mitchell
 - C Leonardi: C. Leonardi
 - D Bolster: D. Bolster
+image: /img/doi/10.1103/PhysRevE.96.053301/firstpage.png
+showonlyimage: yes
 ---
 
 

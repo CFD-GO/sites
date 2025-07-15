@@ -23,6 +23,8 @@ realauthors:
 - S Goujon-Durand: S. Goujon-Durand
 - J Rokicki: J. Rokicki
 - J Wesfreid: J.E. Wesfreid
+image: /img/doi/10.1017/jfm.2014.236/firstpage.png
+showonlyimage: yes
 ---
 
 
